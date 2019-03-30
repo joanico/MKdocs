@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Server Set up - My Docs</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Server Set up";
+    var mkdocs_page_input_path = "server.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> My Docs</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="..">Home</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">User Guide</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../tablets/">Tablet Set up</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../mobile/">Mobile Set up</a>
+                </li>
+                <li class=" current">
+                    
+    <a class="current" href="./">Server Set up</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l3"><a href="#setup-server-iha-ubuntu-1604">Setup server iha ubuntu 16.04</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#1-introdusaun">1. Introdusaun</a></li>
+        
+            <li><a class="toctree-l4" href="#2-requirementukriteria">2. Requirementu/Kriteria</a></li>
+        
+            <li><a class="toctree-l4" href="#3-hahu-kria-server">3. Hahu kria server</a></li>
+        
+            <li><a class="toctree-l4" href="#notas">Notas</a></li>
+        
+            <li><a class="toctree-l4" href="#referensia">Referensia :</a></li>
+        
+        </ul>
+    
+
+    </ul>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../python/">Python Tutorial</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">About</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../about/">Referensia</a>
+                </li>
+    </ul>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">My Docs</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>User Guide &raquo;</li>
+        
+      
+    
+    <li>Server Set up</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="setup-server-iha-ubuntu-1604">Setup server iha ubuntu 16.04<a class="headerlink" href="#setup-server-iha-ubuntu-1604" title="Permanent link">&para;</a></h1>
+<h4 id="1-introdusaun">1. Introdusaun<a class="headerlink" href="#1-introdusaun" title="Permanent link">&para;</a></h4>
+<p>Nginx mak web server ida nebe popular iha mundu no responsabiliza ba hosting husi situs highest-traffic site nian no internet nebe ass liu, diak liu kompara ho apache nebe hetan kazu barak no uza hanesan web server ou proxy.</p>
+<p>Iha kontextu ida nee ita sei koalia konaba maneira nebe uza ka hetan iha server Ubuntu 16.04.</p>
+<h4 id="2-requirementukriteria">2. Requirementu/Kriteria<a class="headerlink" href="#2-requirementukriteria" title="Permanent link">&para;</a></h4>
+<ol>
+<li>
+<p>Antes atu hahu mata dalan ida nee, ita tenki iha regular non-root user  nebe ho estimeua sudo iha konfigurasaun server. </p>
+</li>
+<li>
+<p>Ita presiza hatene oinsa mak atu halo konfigurasaun user account tuir matan dalan server hahu ho 16.04.</p>
+</li>
+</ol>
+<p>​</p>
+<h4 id="3-hahu-kria-server">3. Hahu kria server<a class="headerlink" href="#3-hahu-kria-server" title="Permanent link">&para;</a></h4>
+<p><strong>Step 1. kria public/private ssh key</strong> </p>
+<ol>
+<li>Prosesu kria public ssh keys</li>
+<li>print ssh key</li>
+</ol>
+<p><code>$ cat ~/.ssh/id_rsa.pub</code></p>
+<pre><code>ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQCgKBUVlVVNnGBigJzvAa/ryOHMRPGxZiY66SMxh5RrVsA05kj4IUb6U0Cqf3pgBJSxF5tY2s6g8m7wM923RNRdvC5gsORKpe0FMgIQ== joanicobarros@gmail.com
+</code></pre>
+
+<ol start="2">
+<li>Exekuta ka login ba ita boot nia server hanesan root user</li>
+</ol>
+<p><code>$ ssh root@server_ip_address</code></p>
+<p><strong>Step 2 . kria user foun</strong></p>
+<p>Uza command <code>adduser</code> hodi adisiona user ba ita nia sistema.</p>
+<p><code>$ adduser username</code></p>
+<ul>
+<li>konfirma user foun nia password iha prompt</li>
+</ul>
+<pre><code>Set password prompts:
+Enter new UNIX password:
+Retype new UNIX password:
+passwd: password updated successfully
+</code></pre>
+
+<ul>
+<li>Halo tuir prompt hodi set ba user foun nia informasaun. ida nee diak no aseita detaillu ba informasaun.</li>
+</ul>
+<p><code>User information prompts:
+  Changing the user information for username
+  Enter the new value, or press ENTER for the default
+        Full Name []:
+        Room Number []:
+        Work Phone []:
+        Home Phone []:
+        Other []:
+  Is the information correct? [Y/n]</code>
+  <strong>Step 3. install nginx no konfigura nginx</strong></p>
+<p><code>$ sudo apt-get install nginx</code></p>
+<p>Depois prosesu install nginx hotu tuir bele check web server ho maneira hanesan tuir mai nee:</p>
+<p>Ita bele check ho <code>systemd</code> init system hodi exekuta tuir tipu nebe iha.</p>
+<p>Hapara ou  web server, bele run tipu ida nee:</p>
+<pre><code>$ sudo systemctl stop nginx
+
+</code></pre>
+
+<p>Hahu web server wainhira ita hapara ho tipu ida nee:</p>
+<pre><code>$ sudo systemctl start nginx
+
+</code></pre>
+
+<p>Hapara no depois hahu fila fali ho tipu ida nee:</p>
+<pre><code>$ sudo systemctl restart nginx
+
+</code></pre>
+
+<p>Karik ita muda konfigurasaun Nginx bele reload bebeik la ho dropping connection, bele halo ho command ida nee:</p>
+<pre><code>$ sudo systemctl reload nginx
+
+</code></pre>
+
+<p>Check server ho tipu ida nee:</p>
+<pre><code>$ sudo systemctl status nginx
+</code></pre>
+
+<pre><code>Output
+● nginx.service - A high performance web server and a reverse proxy server
+   Loaded: loaded (/lib/systemd/system/nginx.service; enabled; vendor preset: enabled)
+   Active: active (running) since Mon 2016-04-18 16:14:00 EDT; 4min 2s ago
+ Main PID: 12857 (nginx)
+   CGroup: /system.slice/nginx.service
+           ├─12857 nginx: master process /usr/sbin/nginx -g daemon on; master_process on
+           └─12858 nginx: worker process
+</code></pre>
+
+<p><strong>Step 4. kria root dokumentu file</strong></p>
+<p>depois install nginx run :</p>
+<p><code>/etc/nginx/sites-available/</code> ho <code>/etc/nginx/sites-enable/</code></p>
+<p>automatika kria file path hanesan tuir mai nee;</p>
+<p><code>/var/www/html</code></p>
+<p>exemplu tuir kria file:</p>
+<pre><code>$ sudo mkdir -p /var/www/test.com/
+</code></pre>
+
+<p><strong>Kria index page</strong></p>
+<p>Now that we have our directory structure set up, let&rsquo;s create a default page for each of our sites so that we will have something to display.</p>
+<p>Depois kria root directory, bele kria index page kada situs ida-idak nian.</p>
+<p>Kria <code>index.html</code> file iha domain:</p>
+<pre><code>$ nano /var/www/test.com/index.html
+
+</code></pre>
+
+<p>Bele halo mudansa iha file <code>index.html</code> nia laran.</p>
+<pre><code>&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;Welcome to Test.com!&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;h1&gt;Success!  The test.com server block is working!&lt;/h1&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<p><strong>Step 5. Kria  file server .</strong></p>
+<p>loke file server tuir kria file server kada domain ida.</p>
+<p><code>$ sudo nano /etc/nginx/sites-available/test.com</code></p>
+<p>Edit server file server tuir file nebe ita kria ona ho naran domain nebe iha :`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 </p>
+<pre><code>server {
+        listen 80;
+        listen [::]:80;
+
+        root /var/www/test.com/;
+        index index.html index.htm index.nginx-debian.html;
+
+        server_name test.com www.test.com;
+
+        location / {
+                try_files $uri $uri/ =404;
+        }
+}
+</code></pre>
+
+<p>Depois edit hotu tuir mai reload no run status hodi hare error</p>
+<p><code>$ sudo nginx -s reload</code></p>
+<p><code>$ sudo systemctl status nginx</code></p>
+<pre><code>● nginx.service - A high performance web server and a reverse proxy server
+   Loaded: loaded (/lib/systemd/system/nginx.service; enabled; vendor preset: en
+   Active: active (running) since Sat 2018-01-27 03:27:05 UTC; 4s ago
+  Process: 2207 ExecStop=/sbin/start-stop-daemon --quiet --stop --retry QUIT/5 -
+  Process: 2336 ExecStart=/usr/sbin/nginx -g daemon on; master_process on; (code
+  Process: 2332 ExecStartPre=/usr/sbin/nginx -t -q -g daemon on; master_process 
+ Main PID: 2341 (nginx)
+    Tasks: 2
+   Memory: 1.7M
+      CPU: 31ms
+   CGroup: /system.slice/nginx.service
+           ├─2341 nginx: master process /usr/sbin/nginx -g daemon on; master_pro
+           └─2342 nginx: worker process                           
+</code></pre>
+
+<p>Depois ita kria hotu bele run <code>$ ssh root@server_ip_address</code> hodi hare nia rezultadu.</p>
+<h3 id="notas">Notas<a class="headerlink" href="#notas" title="Permanent link">&para;</a></h3>
+<p>Diferensia entre server configuration sites-enable ho site-available ?</p>
+<ul>
+<li>sites-enable mak file ida nebe ita link husi file original site-available nian.</li>
+<li>site-available mak file original nebe ita rai iha file directory.</li>
+</ul>
+<h3 id="referensia">Referensia :<a class="headerlink" href="#referensia" title="Permanent link">&para;</a></h3>
+<p><a href="https://www.digitalocean.com/community/tutorials/how-to-create-a-sudo-user-on-ubuntu-quickstart">Nginx1</a> no 
+<a href="https://www.digitalocean.com/community/tutorials/how-to-install-nginx-on-ubuntu-16-04">Nginx2</a></p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../python/" class="btn btn-neutral float-right" title="Python Tutorial">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../mobile/" class="btn btn-neutral" title="Mobile Set up"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../mobile/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../python/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+
+</body>
+</html>
