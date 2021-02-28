@@ -7,13 +7,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   
+  
   <link rel="shortcut icon" href="../img/favicon.ico">
   <title>Mobile Set up - My Docs</title>
-  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
 
-  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  <link rel="stylesheet" href="../css/theme.css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
   
   <script>
     // Current page data
@@ -24,7 +25,7 @@
   
   <script src="../js/jquery-2.1.1.min.js" defer></script>
   <script src="../js/modernizr-2.8.3.min.js" defer></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
   <script>hljs.initHighlightingOnLoad();</script> 
   
 </head>
@@ -35,6 +36,7 @@
 
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
       <div class="wy-side-nav-search">
         <a href=".." class="icon icon-home"> My Docs</a>
         <div role="search">
@@ -45,63 +47,34 @@
       </div>
 
       <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-	<ul class="current">
-	  
-          
-            <li class="toctree-l1">
-		
-    <a class="" href="..">Home</a>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <span class="caption-text">User Guide</span>
-    <ul class="subnav">
-                <li class="">
-                    
-    <a class="" href="../tablets/">Tablet Set up</a>
-                </li>
-                <li class=" current">
-                    
-    <a class="current" href="./">Mobile Set up</a>
-    <ul class="subnav">
-            
-    <li class="toctree-l3"><a href="#instala-aplikasaun-no-subar-aplikasaun-iha-mobile">INSTALA APLIKASAUN NO SUBAR APLIKASAUN IHA MOBILE</a></li>
-    
-
-    <li class="toctree-l3"><a href="#etapa-i-instala-aplikasaun-no-xavi-aplikasaun">Etapa I. Instala aplikasaun no xavi aplikasaun</a></li>
-    
-
-    <li class="toctree-l3"><a href="#etapa-ii-subar-aplikasaun-sira">Etapa II. Subar aplikasaun sira.</a></li>
-    
-
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">User Guide</span></p>
+                <ul class="current">
+                    <li class="toctree-l1"><a class="reference internal" href="../tablets/">Tablet Set up</a>
+                    </li>
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Mobile Set up</a>
+    <ul class="current">
     </ul>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../server/">Server Set up</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../python/">Python Tutorial</a>
-                </li>
-    </ul>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <span class="caption-text">About</span>
-    <ul class="subnav">
-                <li class="">
-                    
-    <a class="" href="../about/">Referensia</a>
-                </li>
-    </ul>
-	    </li>
-          
-        </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../server/">Server Set up</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../python/">Python Tutorial</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../Ansible/">Asible Server</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../Install_adb/">Install Adb</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">About</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../about/">Referensia</a>
+                    </li>
+                </ul>
       </div>
-      &nbsp;
+    </div>
     </nav>
 
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
@@ -130,6 +103,7 @@
       
     </li>
   </ul>
+  
   <hr/>
 </div>
           <div role="main">
@@ -142,20 +116,17 @@
 2. Launcher.apk = Subar aplikasaun sira nebe la presiza uza
 3. SPIN.apk = Buka informasaun hanesan Chrome
 </code></pre>
-
 <p><strong>2.</strong>      <strong>Maneira install aplikasaun ba mobile</strong> </p>
 <pre><code>1. Loke aplikasaun nebe ita rai ka ita download husi internet iha dokumentu.
 2. Hili aplikasaun hanesan AppLock.apk tuir hili install
 3. Aktiva Unsource no tuir hili install
 4. Hein prosesu install remata tuir mai bele loke aplikasaun refere. 
 </code></pre>
-
 <p><strong>3.</strong>      <strong>Kria Pola/pattern ka xavi aplikasaun balu no konfigura aplikasaun sira mak hanesan:</strong> </p>
 <pre><code>1. Bluetooth
 2. Install/Uninstall apps
 3. Google Play Store
 </code></pre>
-
 <p><strong>4.</strong>      <strong>Maneira kria pattern :</strong></p>
 <ol>
 <li>Loke app AppLock.apk </li>
@@ -212,7 +183,6 @@
 16. TELEMOR/Menu TT
 17. Video
 </code></pre>
-
 <p>5.3. Check list  ka hanehan koluna vistu iha <code>Hide Drawer menu</code> hodi subar/halakon Launcher Setting three dots.</p>
 <p>5.4. Icon Scale - Hili valor tamanu skala ikone hodi halo boot ka kiik ikone iha lista aplikasaun. </p>
 <p>5.5 Icone Label Size - Hili valor tamanu letra ikone nian hodi halo boot ka kiik tamanu letra iha lista aplikasaun. </p>
@@ -238,7 +208,7 @@
     
   </div>
 
-  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
 </footer>
       
         </div>
@@ -248,7 +218,7 @@
 
   </div>
 
-  <div class="rst-versions" role="note" style="cursor: pointer">
+  <div class="rst-versions" role="note" aria-label="versions">
     <span class="rst-current-version" data-toggle="rst-current-version">
       
       
@@ -262,6 +232,11 @@
     <script>var base_url = '..';</script>
     <script src="../js/theme.js" defer></script>
       <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
 
 </body>
 </html>

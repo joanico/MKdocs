@@ -7,13 +7,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   
+  
   <link rel="shortcut icon" href="../img/favicon.ico">
   <title>Server Set up - My Docs</title>
-  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
 
-  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  <link rel="stylesheet" href="../css/theme.css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
   
   <script>
     // Current page data
@@ -24,7 +25,7 @@
   
   <script src="../js/jquery-2.1.1.min.js" defer></script>
   <script src="../js/modernizr-2.8.3.min.js" defer></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
   <script>hljs.initHighlightingOnLoad();</script> 
   
 </head>
@@ -35,6 +36,7 @@
 
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
       <div class="wy-side-nav-search">
         <a href=".." class="icon icon-home"> My Docs</a>
         <div role="search">
@@ -45,71 +47,44 @@
       </div>
 
       <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-	<ul class="current">
-	  
-          
-            <li class="toctree-l1">
-		
-    <a class="" href="..">Home</a>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <span class="caption-text">User Guide</span>
-    <ul class="subnav">
-                <li class="">
-                    
-    <a class="" href="../tablets/">Tablet Set up</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../mobile/">Mobile Set up</a>
-                </li>
-                <li class=" current">
-                    
-    <a class="current" href="./">Server Set up</a>
-    <ul class="subnav">
-            
-    <li class="toctree-l3"><a href="#setup-server-iha-ubuntu-1604">Setup server iha ubuntu 16.04</a></li>
-    
-        <ul>
-        
-            <li><a class="toctree-l4" href="#1-introdusaun">1. Introdusaun</a></li>
-        
-            <li><a class="toctree-l4" href="#2-requirementukriteria">2. Requirementu/Kriteria</a></li>
-        
-            <li><a class="toctree-l4" href="#3-hahu-kria-server">3. Hahu kria server</a></li>
-        
-            <li><a class="toctree-l4" href="#notas">Notas</a></li>
-        
-            <li><a class="toctree-l4" href="#referensia">Referensia :</a></li>
-        
-        </ul>
-    
-
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">User Guide</span></p>
+                <ul class="current">
+                    <li class="toctree-l1"><a class="reference internal" href="../tablets/">Tablet Set up</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../mobile/">Mobile Set up</a>
+                    </li>
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Server Set up</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#1-introdusaun">1. Introdusaun</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#2-requirementukriteria">2. Requirementu/Kriteria</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#3-hahu-kria-server">3. Hahu kria server</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#notas">Notas</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#referensia">Referensia :</a>
+    </li>
     </ul>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../python/">Python Tutorial</a>
-                </li>
-    </ul>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <span class="caption-text">About</span>
-    <ul class="subnav">
-                <li class="">
-                    
-    <a class="" href="../about/">Referensia</a>
-                </li>
-    </ul>
-	    </li>
-          
-        </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../python/">Python Tutorial</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../Ansible/">Asible Server</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../Install_adb/">Install Adb</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">About</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../about/">Referensia</a>
+                    </li>
+                </ul>
       </div>
-      &nbsp;
+    </div>
     </nav>
 
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
@@ -138,6 +113,7 @@
       
     </li>
   </ul>
+  
   <hr/>
 </div>
           <div role="main">
@@ -166,7 +142,6 @@
 <p><code>$ cat ~/.ssh/id_rsa.pub</code></p>
 <pre><code>ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQCgKBUVlVVNnGBigJzvAa/ryOHMRPGxZiY66SMxh5RrVsA05kj4IUb6U0Cqf3pgBJSxF5tY2s6g8m7wM923RNRdvC5gsORKpe0FMgIQ== joanicobarros@gmail.com
 </code></pre>
-
 <ol start="2">
 <li>Exekuta ka login ba ita boot nia server hanesan root user</li>
 </ol>
@@ -182,7 +157,6 @@ Enter new UNIX password:
 Retype new UNIX password:
 passwd: password updated successfully
 </code></pre>
-
 <ul>
 <li>Halo tuir prompt hodi set ba user foun nia informasaun. ida nee diak no aseita detaillu ba informasaun.</li>
 </ul>
@@ -195,7 +169,7 @@ passwd: password updated successfully
         Home Phone []:
         Other []:
   Is the information correct? [Y/n]</code>
-  <strong>Step 3. install nginx no konfigura nginx</strong></p>
+<strong>Step 3. install nginx no konfigura nginx</strong></p>
 <p><code>$ sudo apt-get install nginx</code></p>
 <p>Depois prosesu install nginx hotu tuir bele check web server ho maneira hanesan tuir mai nee:</p>
 <p>Ita bele check ho <code>systemd</code> init system hodi exekuta tuir tipu nebe iha.</p>
@@ -203,26 +177,21 @@ passwd: password updated successfully
 <pre><code>$ sudo systemctl stop nginx
 
 </code></pre>
-
 <p>Hahu web server wainhira ita hapara ho tipu ida nee:</p>
 <pre><code>$ sudo systemctl start nginx
 
 </code></pre>
-
 <p>Hapara no depois hahu fila fali ho tipu ida nee:</p>
 <pre><code>$ sudo systemctl restart nginx
 
 </code></pre>
-
 <p>Karik ita muda konfigurasaun Nginx bele reload bebeik la ho dropping connection, bele halo ho command ida nee:</p>
 <pre><code>$ sudo systemctl reload nginx
 
 </code></pre>
-
 <p>Check server ho tipu ida nee:</p>
 <pre><code>$ sudo systemctl status nginx
 </code></pre>
-
 <pre><code>Output
 ● nginx.service - A high performance web server and a reverse proxy server
    Loaded: loaded (/lib/systemd/system/nginx.service; enabled; vendor preset: enabled)
@@ -232,7 +201,6 @@ passwd: password updated successfully
            ├─12857 nginx: master process /usr/sbin/nginx -g daemon on; master_process on
            └─12858 nginx: worker process
 </code></pre>
-
 <p><strong>Step 4. kria root dokumentu file</strong></p>
 <p>depois install nginx run :</p>
 <p><code>/etc/nginx/sites-available/</code> ho <code>/etc/nginx/sites-enable/</code></p>
@@ -241,7 +209,6 @@ passwd: password updated successfully
 <p>exemplu tuir kria file:</p>
 <pre><code>$ sudo mkdir -p /var/www/test.com/
 </code></pre>
-
 <p><strong>Kria index page</strong></p>
 <p>Now that we have our directory structure set up, let&rsquo;s create a default page for each of our sites so that we will have something to display.</p>
 <p>Depois kria root directory, bele kria index page kada situs ida-idak nian.</p>
@@ -249,7 +216,6 @@ passwd: password updated successfully
 <pre><code>$ nano /var/www/test.com/index.html
 
 </code></pre>
-
 <p>Bele halo mudansa iha file <code>index.html</code> nia laran.</p>
 <pre><code>&lt;html&gt;
     &lt;head&gt;
@@ -260,7 +226,6 @@ passwd: password updated successfully
     &lt;/body&gt;
 &lt;/html&gt;
 </code></pre>
-
 <p><strong>Step 5. Kria  file server .</strong></p>
 <p>loke file server tuir kria file server kada domain ida.</p>
 <p><code>$ sudo nano /etc/nginx/sites-available/test.com</code></p>
@@ -279,7 +244,6 @@ passwd: password updated successfully
         }
 }
 </code></pre>
-
 <p>Depois edit hotu tuir mai reload no run status hodi hare error</p>
 <p><code>$ sudo nginx -s reload</code></p>
 <p><code>$ sudo systemctl status nginx</code></p>
@@ -297,7 +261,6 @@ passwd: password updated successfully
            ├─2341 nginx: master process /usr/sbin/nginx -g daemon on; master_pro
            └─2342 nginx: worker process                           
 </code></pre>
-
 <p>Depois ita kria hotu bele run <code>$ ssh root@server_ip_address</code> hodi hare nia rezultadu.</p>
 <h3 id="notas">Notas<a class="headerlink" href="#notas" title="Permanent link">&para;</a></h3>
 <p>Diferensia entre server configuration sites-enable ho site-available ?</p>
@@ -330,7 +293,7 @@ passwd: password updated successfully
     
   </div>
 
-  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
 </footer>
       
         </div>
@@ -340,7 +303,7 @@ passwd: password updated successfully
 
   </div>
 
-  <div class="rst-versions" role="note" style="cursor: pointer">
+  <div class="rst-versions" role="note" aria-label="versions">
     <span class="rst-current-version" data-toggle="rst-current-version">
       
       
@@ -354,6 +317,11 @@ passwd: password updated successfully
     <script>var base_url = '..';</script>
     <script src="../js/theme.js" defer></script>
       <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
 
 </body>
 </html>

@@ -9,7 +9,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Python Tutorial - My Docs</title>
+  <title>Asible Server - My Docs</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
 
   <link rel="stylesheet" href="../css/theme.css" />
@@ -18,8 +18,8 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Python Tutorial";
-    var mkdocs_page_input_path = "python.md";
+    var mkdocs_page_name = "Asible Server";
+    var mkdocs_page_input_path = "Ansible.md";
     var mkdocs_page_url = null;
   </script>
   
@@ -59,21 +59,11 @@
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="../server/">Server Set up</a>
                     </li>
-                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Python Tutorial</a>
-    <ul class="current">
-    <li class="toctree-l2"><a class="reference internal" href="#table-of-contents">Table of Contents</a>
-        <ul>
-    <li class="toctree-l3"><a class="reference internal" href="#python-basics-tutorial">Python Basics Tutorial</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#python-advanced-tutorials">Python - Advanced Tutorials</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#python-other-python-tutorials">Python - Other Python Tutorials</a>
-    </li>
-        </ul>
-    </li>
-    </ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../python/">Python Tutorial</a>
                     </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../Ansible/">Asible Server</a>
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Asible Server</a>
+    <ul class="current">
+    </ul>
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="../Install_adb/">Install Adb</a>
                     </li>
@@ -108,7 +98,7 @@
         
       
     
-    <li>Python Tutorial</li>
+    <li>Asible Server</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -119,57 +109,24 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="python-tutorial-in-tetun">Python Tutorial in Tetun<a class="headerlink" href="#python-tutorial-in-tetun" title="Permanent link">&para;</a></h1>
-<h2 id="table-of-contents">Table of Contents<a class="headerlink" href="#table-of-contents" title="Permanent link">&para;</a></h2>
-<h3 id="python-basics-tutorial">Python Basics Tutorial<a class="headerlink" href="#python-basics-tutorial" title="Permanent link">&para;</a></h3>
-<ul>
-<li>Python - Home</li>
-<li>Python - Overview</li>
-<li>Python - Environment Setup</li>
-<li>Python - Basic Syntax</li>
-<li>Python - Variables and Types</li>
-<li>Python - Python Numbers</li>
-<li>Python - Strings</li>
-<li>Python - Lists</li>
-<li>Python - Tuples</li>
-<li>Python - Dictionar</li>
-<li>Python - Data Type Conversion</li>
-<li>Python - Basic Operators</li>
-<li>Python - String Formatting</li>
-<li>Python - Basic String Operations</li>
-<li>Python - Conditions</li>
-<li>Python - Loops</li>
-<li>Python - Functions</li>
-<li>Python - Classes and Objects</li>
-<li>Python - Dictionaries</li>
-<li>Python - Modules and Packages</li>
-<li>Python - Data Science Tutorials</li>
-<li>Python - Numpy Arrays</li>
-<li>Python - Pandas Basics</li>
-</ul>
-<h3 id="python-advanced-tutorials">Python - Advanced Tutorials<a class="headerlink" href="#python-advanced-tutorials" title="Permanent link">&para;</a></h3>
-<ul>
-<li>Python - Generators</li>
-<li>Python - List Comprehensions</li>
-<li>Python - Multiple Function Arguments</li>
-<li>Python - Regular Expression</li>
-<li>Python - Exception Handling</li>
-<li>Python - Sets</li>
-<li>Python - Serialization</li>
-<li>Python - Partial functions</li>
-<li>Python - Decorators</li>
-</ul>
-<h3 id="python-other-python-tutorials">Python - Other Python Tutorials<a class="headerlink" href="#python-other-python-tutorials" title="Permanent link">&para;</a></h3>
-<ul>
-<li>Python - Database Access</li>
-<li>Python - Network Programming</li>
-<li>Python - GUI Programming</li>
-<li>Python - Web development</li>
-<li>Python - Framework
-  1. Botle
-  2. Flask
-  3. Django</li>
-</ul>
+                <h3 id="ansible-to-public-staging-server">Ansible to public staging server<a class="headerlink" href="#ansible-to-public-staging-server" title="Permanent link">&para;</a></h3>
+<p><strong>Step</strong></p>
+<ol>
+<li>
+<p>Create new project for ansible</p>
+</li>
+<li>
+<p>Clone repository ansible</p>
+</li>
+<li>
+<p>Get ssh keys for github</p>
+</li>
+</ol>
+<p><code>curl https://github.com/joanico.keys</code></p>
+<ol start="4">
+<li>Run <code>ssh root@moe-issues-staging.catalpa.build</code></li>
+<li>Run <code>ansible-playbook main.yaml -l moe-issues-staging -t quicky</code></li>
+</ol>
               
             </div>
           </div>
@@ -177,10 +134,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../Ansible/" class="btn btn-neutral float-right" title="Asible Server">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../Install_adb/" class="btn btn-neutral float-right" title="Install Adb">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../server/" class="btn btn-neutral" title="Server Set up"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../python/" class="btn btn-neutral" title="Python Tutorial"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -206,10 +163,10 @@
     <span class="rst-current-version" data-toggle="rst-current-version">
       
       
-        <span><a href="../server/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../python/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="../Ansible/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="../Install_adb/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>
