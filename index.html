@@ -123,21 +123,14 @@
 <p>Mkdocs mak jerador situs static ida nebe dezeña ona hodi dezenvole situs web  dokumentasaun hanesan python no sira seluk. Iha língua programasaun python, MkDocs mak projetu open source ka rekursu ida ne&rsquo;e nakloke ho apoiu barak hosi komunidade. Rekursu nebe uza hodi hakerek dokumentu sira mak uza rekursu markdown no konfigura uza rekursu <code>yaml</code> atu hatene konaba oinsa uza markdown bele lee nia referensia iha nee <a href="https://www.markdownguide.org/">Markdown</a> no  rekursu <code>yaml</code> bele hare iha ne&rsquo;e <a href="https://yaml.org/">Yaml</a>.</p>
 <p>Iha karakterístika boot barak ne&rsquo;ebé inklui:</p>
 <ul>
-<li>Preview dokumentasaun ita-nia ne&rsquo;ebe ita hakerek ida-neʼe</li>
-<li>customiza Fasil ho tema no inefetivu </li>
-<li>dokumentasaun ho Markdown</li>
+<li>Bele host iha nebe deit</li>
+<li>Theme diak no disponibilidade hadia</li>
+<li>Dokumentasaun ho Markdown</li>
 </ul>
 <h3 id="install-mkdocs">Install Mkdocs<a class="headerlink" href="#install-mkdocs" title="Permanent link">&para;</a></h3>
 <p><strong>Install ho jerente pakote</strong></p>
 <p>Se karik uza ona pakote (hanesan  <a href="https://help.ubuntu.com/community/AptGet/Howto">apt-get</a>, <a href="https://dnf.readthedocs.io/en/latest/index.html">dnf</a>, <a href="https://brew.sh/">homebrew</a>, <a href="http://yum.baseurl.org/">yum</a>, <a href="https://chocolatey.org/">chocolatey</a>, no sira seluk) nee ita bele buka   install pakote refere konaba install &ldquo;MkDocs&rdquo; no bele hare nia versaun.</p>
-<p>exemplu hanesan:</p>
-<p>mac homebrew :</p>
-<pre><code>$ brew install mkdocs
-</code></pre>
-<p>Ubuntu apt-get :</p>
-<pre><code>$ sudo apt-get install mkdocs
-</code></pre>
-<p>Karik ita nia jestora pakote la iha pakote &ldquo;MkDocs&rdquo;, ita bele uza nafatin ita boot nia pakote hodi instala &ldquo;<a href="https://www.python.org/">Python</a>&rdquo; no &ldquo;<a href="https://pip.readthedocs.io/en/stable/installing/">pip</a>&rdquo;. Depois ita bele uza pip hodi instala MkDocs. MkDocs suporta Python versions 3.5, 3.6, 3.7, 3.8, no pypy3.</p>
+<p>Se karik ita nia jestora pakote la iha pakote &ldquo;MkDocs&rdquo;, ita bele uza nafatin ita boot nia pakote hodi instala &ldquo;<a href="https://www.python.org/">Python</a>&rdquo; no &ldquo;<a href="https://pip.readthedocs.io/en/stable/installing/">pip</a>&rdquo;. Depois ita bele uza pip hodi instala MkDocs. MkDocs suporta Python versions 3.5, 3.6, 3.7, 3.8, no pypy3.</p>
 <p>Atu install mkdocs hanesan tuir mai no bele hare detallu husi <a href="https://www.mkdocs.org/#installation">instala MkDocs</a>:</p>
 <pre><code>$ pip install mkdocs
 </code></pre>
@@ -146,7 +139,7 @@
 mkdocs, version 1.1.2 from /home/nicko/.pyenv/versions/Devel/envs/mkdocs/lib/python3.8/site-packages/mkdocs (Python 3.8)
 </code></pre>
 <h3 id="kria-projetu-foun">Kria Projetu Foun<a class="headerlink" href="#kria-projetu-foun" title="Permanent link">&para;</a></h3>
-<p>Kria projetu foun iha MkDocs hanesan tuir mai ne&rsquo;e.</p>
+<p>Kria projetu foun iha MkDocs hanesan tuir mai nee.</p>
 <pre><code>$ mkdocs new Mkdocs
 $ cd Mkdocs
 </code></pre>
@@ -166,7 +159,7 @@ INFO    -  Cleaning site directory
 [I 160402 15:50:43 handlers:58] Start watching changes
 [I 160402 15:50:43 handlers:60] Start detecting changes
 </code></pre>
-<p>Loke  <a href="http://127.0.0.1:8000/">http://127.0.0.1:8000/</a> iha ita-nia browser web atu hare dokumentasaun. Ita bele halo mudansa ba ita nia file Markdown no ita nia docs nebe sei kria automatikamente. Bele hare rezultadu.</p>
+<p>Loke  <a href="http://127.0.0.1:8000/">http://127.0.0.1:8000/</a> iha ita nia browser web atu hare dokumentasaun. Ita bele halo mudansa ba ita nia file Markdown no ita nia docs nebe sei kria automatikamente. Bele hare rezultadu.</p>
 <p><img alt="../_images/mkdocs-hello-world.png" src="https://docs.readthedocs.io/en/stable/_images/mkdocs-hello-world.png" /></p>
 <h3 id="aumenta-dokumentasaun-markdown-foun">Aumenta dokumentasaun markdown foun<a class="headerlink" href="#aumenta-dokumentasaun-markdown-foun" title="Permanent link">&para;</a></h3>
 <p>Mkdocs fo abilidade ba ita atu kontinua aumenta ita nia dokumentasaun ho rekursu markdown nian ba dokumentasaun nebe ita rai sei rai iha pasta ka directory <code>docs</code></p>
@@ -258,7 +251,7 @@ span.caption-text {
 about     docs  img    js      python      search       site
 </code></pre>
 <h3 id="deploy-situs-mkdocs">Deploy situs Mkdocs<a class="headerlink" href="#deploy-situs-mkdocs" title="Permanent link">&para;</a></h3>
-<p>Ita nia projetu MkDocs mak deploy bainhira ita iha ita nia dokumentasaun iha repository ida nebe públiku hanesan GitHub, Bitbucket ka GitLab, ita bele hahú uza Read Docs nian iha <a href="https://docs.readthedocs.io/en/stable/intro/import-guide.html">importasaun docs ita-nia</a> ka <a href="https://www.mkdocs.org/user-guide/deploying-your-docs/">deploy mkdocs</a></p>
+<p>MKdocs ita bele host Ita nia projetu bainhira ita nia dokumentasaun iha ona repository ida nebe públiku hanesan GitHub, Bitbucket ka GitLab, ita bele hahú uza Read Docs nian iha <a href="https://docs.readthedocs.io/en/stable/intro/import-guide.html">importasaun docs ita-nia</a> ka <a href="https://www.mkdocs.org/user-guide/deploying-your-docs/">deploy mkdocs</a></p>
 <p>Iha dokumentasaun ida nee sei hatudu deit konaba deploy ba repository iha github nia mak hanesan kria repository foun <a href="https://docs.github.com/en/github/working-with-github-pages/creating-a-github-pages-site">kria github repository</a> fo naran no tuir mai ita clone mai virtualenv local.</p>
 <p>Nota: Atu deploy ho github ba dahuluk ita presiza kria file <code>.gitignore</code> atu nune la bele deploy hotu directory <code>site/</code> ba ita nia repository. atu kria .gitignore mak hanesan:</p>
 <pre><code>$ echo &quot;site/&quot; &gt;&gt; .gitignore
@@ -266,7 +259,7 @@ about     docs  img    js      python      search       site
 <p>Atu deploy ita nia dokumentasaun ita exekuta</p>
 <pre><code>$ mkdocs gh-deploy
 </code></pre>
-<p>IExekusaun kodigu ida leten iha kualker branch nebe deit maibe detallu iha <code>master</code>, ho mkdocs wainhira ita  deploy no run gh-deploy sei autamatika kria branch uniku ida no espesifiku ba deploy ita nia situs deit, ida ne&rsquo;e ita sei   </p>
+<p>Exekusaun kodigu ida leten iha kualker branch nebe deit maibe detallu iha <code>master</code>, ho mkdocs wainhira ita  deploy no run mkdocs gh-deploy sei autamatika kria branch uniku ida no espesifiku ba deploy ita nia situs deit, hafoin ita deploy sei kria link ita nia account github nia exemplu <code>https://joanico.github.io/MKdocs/</code> tuir mai ita bele ona asesu ita nia dokumentasaun iha kualker fatin ne&rsquo;e deit.</p>
 <h2 id="rekursu-esterna">Rekursu esterna<a class="headerlink" href="#rekursu-esterna" title="Permanent link">&para;</a></h2>
 <ul>
 <li>
@@ -282,8 +275,6 @@ about     docs  img    js      python      search       site
 <p><a href="https://www.mkdocs.org/user-guide/writing-your-docs/">Hakerek ba imi-nia docs ho MkDocs</a></p>
 </li>
 </ul>
-<p>```</p>
-<p>```</p>
               
             </div>
           </div>
@@ -328,5 +319,5 @@ about     docs  img    js      python      search       site
 
 <!--
 MkDocs version : 1.1.2
-Build Date UTC : 2021-03-28 13:07:16.680658+00:00
+Build Date UTC : 2021-03-28 13:26:07.835976+00:00
 -->
