@@ -9,13 +9,12 @@
   
   
   <link rel="shortcut icon" href="img/favicon.ico">
-  <title>Niko Docs</title>
+  <title>My Docs</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
 
   <link rel="stylesheet" href="css/theme.css" />
   <link rel="stylesheet" href="css/theme_extra.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
-  <link href="extra_css/extra.css" rel="stylesheet" />
   
   <script>
     // Current page data
@@ -27,8 +26,6 @@
   <script src="js/jquery-2.1.1.min.js" defer></script>
   <script src="js/modernizr-2.8.3.min.js" defer></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/rust.min.js"></script>
   <script>hljs.initHighlightingOnLoad();</script> 
   
 </head>
@@ -41,7 +38,7 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
     <div class="wy-side-scroll">
       <div class="wy-side-nav-search">
-        <a href="." class="icon icon-home"> Niko Docs</a>
+        <a href="." class="icon icon-home"> My Docs</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
@@ -50,38 +47,30 @@
       </div>
 
       <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-                <p class="caption"><span class="caption-text">Matadalan</span></p>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="python_tutorial/">Python Tutorial</a>
+                <ul class="current">
+                    <li class="toctree-l1 current"><a class="reference internal current" href=".">Home</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#atu-hahu-ho-mkdocs">Atu Hahú ho MkDocs</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#hahu-informasaun-lalais">Hahú informasaun lalais</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#rekursu-esterna">Rekursu esterna</a>
+    </li>
+    </ul>
                     </li>
                 </ul>
-                <p class="caption"><span class="caption-text">Python Baziku</span></p>
+                <p class="caption"><span class="caption-text">User Guide</span></p>
                 <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="python_overview/">Python Introdusaun</a>
+                    <li class="toctree-l1"><a class="reference internal" href="tablets/">Tablet Set up</a>
                     </li>
-                    <li class="toctree-l1"><a class="" href="python_environment_setup">Python Kria Enviromentu</a>
+                    <li class="toctree-l1"><a class="reference internal" href="mobile/">Mobile Set up</a>
                     </li>
-                    <li class="toctree-l1"><a class="reference internal" href="execute_python_syntax/">Python Sintase</a>
+                    <li class="toctree-l1"><a class="reference internal" href="python/">Python Tutorial</a>
                     </li>
-                    <li class="toctree-l1"><a class="reference internal" href="python_variables/">Python Variabel</a>
+                    <li class="toctree-l1"><a class="reference internal" href="Install_adb/">Install Adb</a>
                     </li>
                 </ul>
-                <p class="caption"><span class="caption-text">Python Avansadu</span></p>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="python_advanced_tutorials/">Python Tutorial Avansadu</a>
-                    </li>
-                </ul>
-                <p class="caption"><span class="caption-text">Python Tutorial Seluk</span></p>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="python_other_tutorials/">Python Tutorial Seluk</a>
-                    </li>
-                </ul>
-                <p class="caption"><span class="caption-text">Python Topiku</span></p>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="python_notifikasaun/">Python Notifikasaun</a>
-                    </li>
-                </ul>
-                <p class="caption"><span class="caption-text">Konaba</span></p>
+                <p class="caption"><span class="caption-text">About</span></p>
                 <ul>
                     <li class="toctree-l1"><a class="reference internal" href="about/">Referensia</a>
                     </li>
@@ -95,7 +84,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href=".">Niko Docs</a>
+        <a href=".">My Docs</a>
       </nav>
 
       
@@ -118,149 +107,35 @@
           <div role="main">
             <div class="section">
               
-                <h2 id="benvindu-mai-vizita-mkdocs">Benvindu mai vizita MKDocs<a class="headerlink" href="#benvindu-mai-vizita-mkdocs" title="Permanent link">&para;</a></h2>
-<h3 id="hahu-mkdocs">Hahú MkDocs<a class="headerlink" href="#hahu-mkdocs" title="Permanent link">&para;</a></h3>
-<p>Mkdocs mak jerador situs static ida nebe dezeña ona hodi dezenvole situs web  dokumentasaun hanesan python no sira seluk. Iha língua programasaun python, MkDocs mak projetu open source ka rekursu ida ne&rsquo;e nakloke ho apoiu barak hosi komunidade. Rekursu nebe uza hodi hakerek dokumentu sira mak uza rekursu markdown no konfigura uza rekursu <code>yaml</code> atu hatene konaba oinsa uza markdown bele lee nia referensia iha nee <a href="https://www.markdownguide.org/">Markdown</a> no  rekursu <code>yaml</code> bele hare iha ne&rsquo;e <a href="https://yaml.org/">Yaml</a>.</p>
-<p>Iha karakterístika boot barak nebe inklui:</p>
+                <h1 id="benvindu-mai-vizita-mkdocs">Benvindu mai vizita MKDocs<a class="headerlink" href="#benvindu-mai-vizita-mkdocs" title="Permanent link">&para;</a></h1>
+<h2 id="atu-hahu-ho-mkdocs">Atu Hahú ho MkDocs<a class="headerlink" href="#atu-hahu-ho-mkdocs" title="Permanent link">&para;</a></h2>
+<p>MkDocs mak jeradór dokumentasaun nian ida ne &lsquo; ebé foka ba simples no lalais liután. Iha karakterístika boot barak ne &lsquo; ebé inklui:</p>
 <ul>
-<li>Bele host iha nebe deit</li>
-<li>Theme diak no disponibilidade hadia</li>
-<li>Dokumentasaun ho Markdown</li>
+<li>
+<p>Preview dokumentasaun ita-nia ne&rsquo;ebe ita hakerek ida-neʼe</p>
+</li>
+<li>
+<p>customiza Fasil ho tema no inefetivu </p>
+</li>
+<li>dokumentasaun ho Markdown</li>
 </ul>
-<h3 id="install-mkdocs">Install Mkdocs<a class="headerlink" href="#install-mkdocs" title="Permanent link">&para;</a></h3>
-<p><strong>Install ho jerente pakote</strong></p>
-<p>Se karik uza ona pakote (hanesan  <a href="https://help.ubuntu.com/community/AptGet/Howto">apt-get</a>, <a href="https://dnf.readthedocs.io/en/latest/index.html">dnf</a>, <a href="https://brew.sh/">homebrew</a>, <a href="http://yum.baseurl.org/">yum</a>, <a href="https://chocolatey.org/">chocolatey</a>, no sira seluk) nee ita bele buka   install pakote refere konaba install &ldquo;MkDocs&rdquo; no bele hare nia versaun.</p>
-<p>Se karik ita nia jestora pakote la iha pakote &ldquo;MkDocs&rdquo;, ita bele uza nafatin ita boot nia pakote hodi instala &ldquo;<a href="https://www.python.org/">Python</a>&rdquo; no &ldquo;<a href="https://pip.readthedocs.io/en/stable/installing/">pip</a>&rdquo;. Depois ita bele uza pip hodi instala MkDocs. MkDocs suporta Python versions 3.5, 3.6, 3.7, 3.8, no pypy3.</p>
-<p>Atu install mkdocs hanesan tuir mai no bele hare detallu husi <a href="https://www.mkdocs.org/#installation">instala MkDocs</a>:</p>
-<pre><code>$ pip install mkdocs
+<p>Notas</p>
+<p>MkDocs mak opsaun ida-ne &lsquo; ebé boot atu hametin dokumentasaun ne &lsquo; ebé tékniku. Maski nune&rsquo;e, Lee Docs ne&rsquo;e mós apoiu <a href="https://docs.readthedocs.io/en/stable/intro/getting-started-with-sphinx.html">Sphinx</a>, instrumentu ida seluk ba hakerek no harii dokumentasaun.</p>
+<h2 id="hahu-informasaun-lalais">Hahú informasaun lalais<a class="headerlink" href="#hahu-informasaun-lalais" title="Permanent link">&para;</a></h2>
+<p>Situasaun kona-ba imi iha ona Python, <a href="https://www.mkdocs.org/#installation">instala MkDocs</a>:</p>
+<pre><code>pip install mkdocs
 </code></pre>
-<p>Hafoin install ita bele hare verzaun Mkdocs nebe ita foin install.</p>
-<pre><code>$ mkdocs --version
-mkdocs, version 1.1.2 from /home/nicko/.pyenv/versions/Devel/envs/mkdocs/lib/python3.8/site-packages/mkdocs (Python 3.8)
+<p>Setup ita-nia projetu MkDocs:</p>
+<pre><code>mkdocs new .
 </code></pre>
-<h3 id="kria-projetu-foun">Kria Projetu Foun<a class="headerlink" href="#kria-projetu-foun" title="Permanent link">&para;</a></h3>
-<p>Kria projetu foun iha MkDocs hanesan tuir mai nee.</p>
-<pre><code>$ mkdocs new Mkdocs
-$ cd Mkdocs
+<p>This command creates <code>mkdocs.yml</code> which holds your MkDocs configuration, and <code>docs/index.md</code>which is the Markdown file that is the entry point for your documentation.</p>
+<p>You can edit this <code>index.md</code> file to add more details about your project and then you can build your documentation:</p>
+<p>Ukun-fuan ida ne&rsquo;e kria <code>mkdocs.yml</code> ne &lsquo; ebé mak ita-nia konfigurasaun MkDocs, no <code>docs/index.md</code> which ne &lsquo; ebé mak hato&rsquo;o Markdown ne &lsquo; ebé mak pontu entrada ba ita-nia dokumentasaun. Ita bele edisaun ida-ne&rsquo;e <code>index.md</code> husu atu fó hatene liután kona-ba ita-nia projetu no tuirmai ita bele harii imi-nia dokumentasaun:</p>
+<pre><code>mkdocs serve
 </code></pre>
-<p>Konfigura <code>mkdocs.yml</code> ba ita nia projetu mkdocs mak hanesan <code>docs/index.md</code> ida nebe halo ho  Markdown parte pajina dahuluk ita nia dokumentasaun. </p>
-<pre><code>.
-└── MKdocs
-    ├── docs
-    │   ├── index.md
-    └── mkdocs.xml
-</code></pre>
-<p>Ita bele edita file <code>index.md</code> no bele aumenta detallu konaba ita nia projetu no tuir mai ita bele hari ita nia dokumentasaun liu husi run mkdocs serve:</p>
-<h3 id="exekuta-projetu">Exekuta Projetu<a class="headerlink" href="#exekuta-projetu" title="Permanent link">&para;</a></h3>
-<pre><code>$ mkdocs serve
-INFO    -  Building documentation...
-INFO    -  Cleaning site directory
-[I 160402 15:50:43 server:271] Serving on http://127.0.0.1:8000
-[I 160402 15:50:43 handlers:58] Start watching changes
-[I 160402 15:50:43 handlers:60] Start detecting changes
-</code></pre>
-<p>Loke  <a href="http://127.0.0.1:8000/">http://127.0.0.1:8000/</a> iha ita nia browser web atu hare dokumentasaun. Ita bele halo mudansa ba ita nia file Markdown no ita nia docs nebe sei kria automatikamente. Bele hare rezultadu.</p>
+<p>Haruka harii imi-nia arkivu Markdown ba HTML no hahú server dezenvolvimentu ida ba browse ita-nia dokumentasaun. Loke  <a href="http://127.0.0.1:8000/">http://127.0.0.1:8000/</a> iha ita-nia browser web atu haree imi-nia dokumentasaun. Ita bele halo mudansa ba ita-nia arkivu Markdown no ita-nia docs ne &lsquo; ebé sei harii automatikamente fali.</p>
 <p><img alt="../_images/mkdocs-hello-world.png" src="https://docs.readthedocs.io/en/stable/_images/mkdocs-hello-world.png" /></p>
-<h3 id="aumenta-dokumentasaun-markdown-foun">Aumenta dokumentasaun markdown foun<a class="headerlink" href="#aumenta-dokumentasaun-markdown-foun" title="Permanent link">&para;</a></h3>
-<p>Mkdocs fo abilidade ba ita atu kontinua aumenta ita nia dokumentasaun ho rekursu markdown nian ba dokumentasaun nebe ita rai sei rai iha pasta ka directory <code>docs</code></p>
-<p>Bele hare exemplu :</p>
-<pre><code>.
-└── MKdocs
-    ├── docs
-    │   ├── about.md
-    │   ├── execute_python_syntax.md
-    │   ├── index.md
-    │   ├── python_advanced_tutorials.md
-    │   ├── python_environment_setup.md
-    │   ├── python_notifikasaun.md
-    │   ├── python_other_tutorials.md
-    │   ├── python_overview.md
-    │   ├── python_tutorial.md
-    │   └── python_variables.md
-    └── mkdocs.yml
-</code></pre>
-<h3 id="kria-nav-ka-menu">Kria nav ka menu<a class="headerlink" href="#kria-nav-ka-menu" title="Permanent link">&para;</a></h3>
-<p>Iha exemplu leten ita aumenta ona dokumentasaun ho mardown iha directory <code>docs</code> nia laran hamutuk ho <code>index.md</code> tuir mai ita presiza defini hanesan menu ka dropdown menu iha <code>mkdocs.yml</code> nia laran hanesan iha exemplu tuir mai:</p>
-<pre><code>site_name: Niko Docs
-# ida nee kria navbar ka menu
-nav:
-- Matadalan:
-    - 'Python Tutorial': 'python_tutorial.md'
-- Python Baziku:
-    - 'Python Introdusaun': 'python_overview.md'
-    - 'Python Kria Enviromentu': 'python_environment_setup'
-    - 'Python Sintase': 'execute_python_syntax.md'
-    - 'Python Variabel': 'python_variables.md'
-- Python Avansadu:
-    - 'Python Tutorial Avansadu': 'python_advanced_tutorials.md'
-- Python Tutorial Seluk:
-     - 'Python Tutorial Seluk': 'python_other_tutorials.md'
-- Python Topiku:
-    - 'Python Notifikasaun': 'python_notifikasaun.md'
-- Konaba:
-    - 'Referensia': 'about.md'
-</code></pre>
-<h3 id="troka-theme-mkdocs">Troka theme mkdocs<a class="headerlink" href="#troka-theme-mkdocs" title="Permanent link">&para;</a></h3>
-<p>Ita bele troka theme iha mkdocs mak hanesan:</p>
-<pre><code>#Kria tema 
-theme:
-    name: readthedocs #iha nebe ita bele troka readthedocs tema ba mkdocs
-    nav_style: red
-    highlightjs: true
-    hljs_languages:
-        - yaml
-        - rust
-</code></pre>
-<h3 id="kria-extra-css-no-image">Kria extra css no Image<a class="headerlink" href="#kria-extra-css-no-image" title="Permanent link">&para;</a></h3>
-<p>Iha mkdocs ita bele muda style tuir ita nia hakarak liu husi extra css ka ita bele uza image liu husi kria extra img iha mkdocs nia laran. Bele hare iha exemplu tuir mai ne&rsquo;e.</p>
-<pre><code>.
-└── MKdocs
-    ├── css
-    │   ├── theme.css
-    │   └── theme_extra.css
-    ├── docs
-    │   ├── extra_css
-    │   │   └── extra.css #Kria extra css 
-    │   ├── img
-    │   │   └── var.png   #Kria extra img
-    │   ├── index.md
-    │   ├── python_overview.md
-    │   └── python_variables.md
-    ├── fonts
-    │   ├── fontawesome-webfont.eot
-    ├── img
-    │   ├── favicon.ico
-    └── mkdocs.xyml
-</code></pre>
-<p>Exemplu troka style heading 2 husi markdown nia iha <code>extra.css</code></p>
-<pre><code>h2 {
-    color: red;
-}
-span.caption-text {
-    color: cornflowerblue;
-}
-</code></pre>
-<h3 id="hari-situs-mkdocs">Hari situs mkdocs<a class="headerlink" href="#hari-situs-mkdocs" title="Permanent link">&para;</a></h3>
-<p>Hari ita nia dokumentasaun sai hanesan situs. Mkdocs sei fo aumatikamente dokumentu sira sei forma ho HTML <code>index.html</code> file no pasta ka directory no fo file static sira hanesan <code>css</code>, <code>font</code>, <code>img</code> ba directory.</p>
-<p>Atu hari ita nia situs ita sei run <code>mkdocs build</code> no wainhira ita atu update ka aumenta dokumentasaun ruma ita presiza hamos directory tuan no koko hari fila fali maneira hamoos mak ita exekuta <code>mkdocs buil --clean</code> iha exemplu ida ne&rsquo;e sei hatudu deit konaba oinsa hari ita nia situs.</p>
-<pre><code>$ mkdocs build 
-</code></pre>
-<p>Sei hatudu rezultadu hanesan:</p>
-<pre><code>$ ls
-404.html  css   fonts  index.html  mkdocs.yml  search.html  sitemap.xml
-about     docs  img    js      python      search       site
-</code></pre>
-<h3 id="deploy-situs-mkdocs">Deploy situs Mkdocs<a class="headerlink" href="#deploy-situs-mkdocs" title="Permanent link">&para;</a></h3>
-<p>MKdocs ita bele host Ita nia projetu bainhira ita nia dokumentasaun iha ona repository ida nebe públiku hanesan GitHub, Bitbucket ka GitLab, ita bele hahú uza Read Docs nian iha <a href="https://docs.readthedocs.io/en/stable/intro/import-guide.html">importasaun docs ita-nia</a> ka <a href="https://www.mkdocs.org/user-guide/deploying-your-docs/">deploy mkdocs</a></p>
-<p>Iha dokumentasaun ida nee sei hatudu deit konaba deploy ba repository iha github nia mak hanesan kria repository foun <a href="https://docs.github.com/en/github/working-with-github-pages/creating-a-github-pages-site">kria github repository</a> fo naran no tuir mai ita clone mai virtualenv local.</p>
-<p>Nota: Atu deploy ho github ba dahuluk ita presiza kria file <code>.gitignore</code> atu nune la bele deploy hotu directory <code>site/</code> ba ita nia repository. atu kria .gitignore mak hanesan:</p>
-<pre><code>$ echo &quot;site/&quot; &gt;&gt; .gitignore
-</code></pre>
-<p>Atu deploy ita nia dokumentasaun ita exekuta</p>
-<pre><code>$ mkdocs gh-deploy
-</code></pre>
-<p>Exekusaun kodigu ida leten iha kualker branch nebe deit maibe detallu iha <code>master</code>, ho mkdocs wainhira ita  deploy no run mkdocs gh-deploy sei kopia site ba branch gh-deploy no push ba github, <code>gp-deploy</code> nee autmatika wainhira ita run mkdocs gh-deploy. </p>
-<p>Hafoin ita deploy sei kria link ida refere ba ita nia account github nia exemplu <code>https://joanico.github.io/MKdocs/</code> tuir mai ita bele ona asesu ita nia dokumentasaun iha kualker fatin ne&rsquo;e deit.</p>
+<p>Ita-nia projetu MkDocs mak harii bainhira ita iha ita-nia dokumentasaun iha repository ida ne &lsquo; ebé públiku hanesan GitHub, Bitbucket ka GitLab, ita bele hahú uza Read Docs nian husi <a href="https://docs.readthedocs.io/en/stable/intro/import-guide.html">importasaun docs ita-nia</a>.</p>
 <h2 id="rekursu-esterna">Rekursu esterna<a class="headerlink" href="#rekursu-esterna" title="Permanent link">&para;</a></h2>
 <ul>
 <li>
@@ -280,6 +155,13 @@ about     docs  img    js      python      search       site
             </div>
           </div>
           <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="tablets/" class="btn btn-neutral float-right" title="Tablet Set up">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+    </div>
   
 
   <hr/>
@@ -304,6 +186,8 @@ about     docs  img    js      python      search       site
       
       
       
+        <span style="margin-left: 15px"><a href="tablets/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
     </span>
 </div>
     <script>var base_url = '.';</script>
@@ -320,5 +204,5 @@ about     docs  img    js      python      search       site
 
 <!--
 MkDocs version : 1.1.2
-Build Date UTC : 2021-03-28 13:35:35.647434+00:00
+Build Date UTC : 2021-02-28 02:50:32.786253+00:00
 -->
