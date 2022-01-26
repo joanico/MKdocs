@@ -140,83 +140,74 @@
 <p><strong>Saida mak Variabel ?</strong></p>
 <p>Variabel mak fatin memoria rezerva ida hodi rai valor sira. Signifika katak bainhira ita kria variabel ida ita rezerva hela fatin mamu iha memoria, valor sira nebe ita rai bele ho tipu data interger ka karakteristika sira.</p>
 <h3 id="deklara-variabel">Deklara variabel<a class="headerlink" href="#deklara-variabel" title="Permanent link">&para;</a></h3>
-<p>Atu deklara variabel iha python partikularmente ita indentifika <code>Naran</code> no <code>Valor</code></p>
-<p><code>Naran</code> mak hodi identifika  variabel</p>
-<p><code>Valor</code> bele identifika depois operador (=)  </p>
-<p>Por exemple:</p>
-<p><code>a = 1</code></p>
+<p>Atu deklara variabel iha python partikularmente ita indentifika <code>Naran</code> no <code>Valor</code>:
+<code>Naran</code> mak hodi identifika  variabel
+<code>Valor</code> bele identifika depois operador (=)  </p>
+<p>Por exemple:
+  <code>a = 1</code></p>
 <p><img alt="var" src="https://i.postimg.cc/KYvB4scS/Screen-Shot-2021-03-10-at-6-10-06-PM.png" /></p>
 <p>Notas: a mak identifika ona naran husi variabel no valor mak 1 </p>
 <h3 id="naran-variabel">Naran Variabel<a class="headerlink" href="#naran-variabel" title="Permanent link">&para;</a></h3>
 <p>Python naran variabel bele refere ba kualker naran husi variabel bele hakerek ho letra maiskula ka minuskula no bele hakerek digital husi 0 to’o 9 no uza simbolu sira hanesan underscore(__)</p>
-<p>```</p>
-<blockquote>
-<blockquote>
-<blockquote>
-<p>naran = &ldquo;Mario&rdquo;
-tinan = 30
-altura = 168
-  ```</p>
-</blockquote>
-</blockquote>
-</blockquote>
+<pre><code>&gt;&gt;&gt; naran = &quot;Mario&quot;
+&gt;&gt;&gt; tinan = 30
+&gt;&gt;&gt; altura = 168
+</code></pre>
 <p>Print variable naran :</p>
-<p>```</p>
-<blockquote>
-<blockquote>
-<blockquote>
-<p>print(naran)<br />
-print(tinan)<br />
-print(altura)<br />
-  ```</p>
-</blockquote>
-</blockquote>
-</blockquote>
+<pre><code>&gt;&gt;&gt; print(naran)  
+&gt;&gt;&gt; print(tinan)  
+&gt;&gt;&gt; print(altura)  
+</code></pre>
 <p>Fo sai rezultadu:</p>
-<p><code>Mario
-  30
-  168</code></p>
+<pre><code>Mario
+30
+168
+</code></pre>
 <h3 id="multipla-assignment">Multipla Assignment<a class="headerlink" href="#multipla-assignment" title="Permanent link">&para;</a></h3>
 <p>Iha python bele kria variabel barak no refere ba valor ida deit ka ita bele kria valor ida bele assign ba multipla variabel ka variabel oin-oin.</p>
 <p>Exemplu:</p>
 <p>Assign valor ida ba multipla variabel ka bele kria multipla variabel fo valor ida edit.</p>
-<p>```
-  a = b = c = 10</p>
-<p>print(a)
-  print(b)
-  print(c)
-  ```</p>
+<pre><code>a = b = c = 10
+
+print(a)
+print(b)
+print(c)
+</code></pre>
 <p>Assign multipla valor ba multipla variabel </p>
 <p>```
-  x, y, z = 10, 15, &ldquo;hello&rdquo;</p>
+x, y, z = 10, 15, &ldquo;hello&rdquo;</p>
 <p>print (x)
-  print (y)
-  print (z)
+print (y)
+print (z)
   ```</p>
 <h3 id="tipu-variabel">Tipu Variabel<a class="headerlink" href="#tipu-variabel" title="Permanent link">&para;</a></h3>
 <p>Tipu python variabel iha rua local variabel no global variabel.</p>
 <p><strong>Local Variabel</strong></p>
 <p>Local variabel mak defini iha funsaun nia laran no iha local scope.</p>
 <p>Exemplu:</p>
-<p><code># Deklara funsaun  
+<pre><code>  # Deklara funsaun  
   def func():  
       # defini lokal variabel 
       a = 20  
-      print("Variabel a mak", a)  
+      print(&quot;Variabel a mak&quot;, a)  
     # bolu funsaun
-  func()</code></p>
+  func() 
+</code></pre>
 <p>Fo sai rezultadu</p>
-<p><code>Variabel a mak 20</code></p>
+<pre><code> Variabel a mak 20
+</code></pre>
 <p>Global Variabel bele uza jeral ka laos iha funsaun nia laran ka global scope no bele uza mos iha funsaun nia laran ka local scope maybe tenki uza global keyword. </p>
 <p>Exemplu:</p>
-<p><code>a = 20 # Global variabel
+<pre><code>  a = 20 # Global variabel
   # Deklara funsaun  
   def func():  
-      print("global a mak", a)  
+      print(&quot;global a mak&quot;, a)  
       # bolu funsaun
-  func()</code></p>
-<p>Fo sai rezultadu</p>
-<p><code>global a mak 20</code></p>
+  func()
+</code></pre>
+<p>Fo sai rezultadu  </p>
+<pre><code>    global a mak 20
+</code></pre>
 <p>Exemplu global variabel iha funsaun nia laran uza global keyword:</p>
 <pre><code># Deklara funsaun  
 def func():
