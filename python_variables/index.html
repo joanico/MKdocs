@@ -186,12 +186,12 @@ print (z)
 <p>Local variabel mak defini iha funsaun nia laran no iha local scope.</p>
 <p>Exemplu:</p>
 <pre><code>  # Deklara funsaun  
-  def func():  
+  def funs():  
       # defini lokal variabel 
       a = 20  
       print(&quot;Variabel a mak&quot;, a)  
     # bolu funsaun
-  func() 
+  funs() 
 </code></pre>
 <p>Fo sai rezultadu</p>
 <pre><code>Variabel a mak 20
@@ -200,10 +200,10 @@ print (z)
 <p>Exemplu:</p>
 <pre><code>  a = 20 # Global variabel
   # Deklara funsaun  
-  def func():  
+  def funs():  
       print(&quot;global a mak&quot;, a)  
       # bolu funsaun
-  func()
+  funs()
 </code></pre>
 <p>Fo sai rezultadu  </p>
 <pre><code>global a mak 20
@@ -223,13 +223,13 @@ func()
 </code></pre>
 <p>Exemplu konaba deklara global no local variabel iha funsaun nia laran:</p>
 <pre><code># Deklara funsaun  
-def func():
+def funs():
     global a
     a = 20 
     h = 2  # defini lokal variabel 
     print(&quot;global&quot;, a, &quot;no local&quot;, h)  
 
-func() # bolu funsaun 
+funs() # bolu funsaun 
 </code></pre>
               
             </div>
