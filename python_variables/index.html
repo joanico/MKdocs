@@ -67,17 +67,15 @@
     <ul class="current">
     <li class="toctree-l2"><a class="reference internal" href="#deklara-variabel">Deklara variabel</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#object-referencia">Object referencia</a>
-    </li>
     <li class="toctree-l2"><a class="reference internal" href="#naran-variabel">Naran Variabel</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#multi-assignment">Multi Assignment</a>
+    <li class="toctree-l2"><a class="reference internal" href="#multipla-assignment">Multipla Assignment</a>
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#tipu-variabel">Tipu Variabel</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#python-tipu-data">Python - Tipu Data</a>
-    </li>
     </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../python_data_type/">Python Tipu Data</a>
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="../python_list_slicing/">Python Slice</a>
                     </li>
@@ -139,109 +137,94 @@
             <div class="section">
               
                 <h2 id="python-variabel"><strong>Python - Variabel</strong><a class="headerlink" href="#python-variabel" title="Permanent link">&para;</a></h2>
-<p>Variabel mak fatin memoria rezerva hodi rai valor sira. Signifika katak bainhira ita kria variabel ida ita rezerva hela fatin mamu iha memoria no tipu data ba variabel, bele rai interger decimal ka karakteristika iha variabel sira.</p>
+<p><strong>Saida mak Variabel ?</strong></p>
+<p>Variabel mak fatin memoria rezerva ida hodi rai valor sira. Signifika katak bainhira ita kria variabel ida ita rezerva hela fatin mamu iha memoria, valor sira nebe ita rai bele ho tipu data interger ka karakteristika sira.</p>
 <h3 id="deklara-variabel">Deklara variabel<a class="headerlink" href="#deklara-variabel" title="Permanent link">&para;</a></h3>
-<p>Python deklara variabel la partikularmente ho tipu data python waihira ita deklara ka kria variabel ida ita assign valor ba variabel simbolikamente hare husi operador (=).</p>
-<p>Por exemplu:</p>
-<pre><code>a = 1
-</code></pre>
-<p><img src="https://i.postimg.cc/9fDgFS7r/Screen-Shot-2021-03-11-at-4-48-43-PM.png" alt="var" style="zoom: 50%;" /></p>
-<h3 id="object-referencia">Object referencia<a class="headerlink" href="#object-referencia" title="Permanent link">&para;</a></h3>
-<p>Python object oriented ne&rsquo;e integradu ona wainhira ita print diretamente no ita bele print data ho tipu oin-oin.</p>
-<p>Ezemplu:</p>
-<pre><code>&gt;&gt;&gt; print(&quot;Mario&quot;)
-Mario
-</code></pre>
-<p>no ketik:</p>
-<pre><code>&gt;&gt;&gt; type(&quot;Mario&quot;)
-&lt;class 'str'&gt;
-</code></pre>
+<p>Atu deklara variabel iha python partikularmente ita indentifika <code>Naran</code> no <code>Valor</code></p>
+<p><code>Naran</code> mak hodi identifika  variabel</p>
+<p><code>Valor</code> bele identifika depois operador (=)  </p>
+<p>Por exemple:</p>
+<p><code>a = 1</code></p>
+<p><img alt="var" src="https://i.postimg.cc/KYvB4scS/Screen-Shot-2021-03-10-at-6-10-06-PM.png" /></p>
+<p>Notas: a mak identifika ona naran husi variabel no valor mak 1 </p>
 <h3 id="naran-variabel">Naran Variabel<a class="headerlink" href="#naran-variabel" title="Permanent link">&para;</a></h3>
-<p>Python naran variabel bele refere ba kualker naran husi variabel bele hakerek ho letra maiskula ka minuskula no bele hakerek digital husi 0 to&rsquo;o 9 no uza simbolu sira hanesan underscore(__)</p>
-<pre><code>&gt;&gt;&gt; naran = &quot;Mario&quot;
-&gt;&gt;&gt; tinan = 30
-&gt;&gt;&gt; altura = 168
-</code></pre>
-<p>Print naran variabel :</p>
-<pre><code>&gt;&gt;&gt; print(naran)  
-&gt;&gt;&gt; print(tinan)  
-&gt;&gt;&gt; print(altura)  
-</code></pre>
+<p>Python naran variabel bele refere ba kualker naran husi variabel bele hakerek ho letra maiskula ka minuskula no bele hakerek digital husi 0 to’o 9 no uza simbolu sira hanesan underscore(__)</p>
+<p>```</p>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>naran = &ldquo;Mario&rdquo;
+tinan = 30
+altura = 168
+  ```</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<p>Print variable naran :</p>
+<p>```</p>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>print(naran)<br />
+print(tinan)<br />
+print(altura)<br />
+  ```</p>
+</blockquote>
+</blockquote>
+</blockquote>
 <p>Fo sai rezultadu:</p>
-<pre><code>Mario
-30
-168
-</code></pre>
-<p>Fo variabel naran la hanesan :</p>
-<pre><code>naran = &quot;A&quot;  
-Naran = &quot;B&quot;  
-naRan = &quot;C&quot;  
-NARAN = &quot;D&quot;  
-n_a_r_a_n = &quot;E&quot;  
-_naran = &quot;F&quot;  
-naran_ = &quot;G&quot;  
-_naran_ = &quot;H&quot;  
-na56ra3 = &quot;I&quot;  
-</code></pre>
-<p>Print :</p>
-<pre><code>print(naran, Naran, naRan, NARAN, n_a_r_a_n, _naran, naran_, _naran_, na56ra3) 
-</code></pre>
-<h3 id="multi-assignment">Multi Assignment<a class="headerlink" href="#multi-assignment" title="Permanent link">&para;</a></h3>
-<p>Iha python ita bele kria variabel barak no refere ba valor ida deit ka ita bele kria valor ida bele assign ba  multi variabel ka variabel oin-oin</p>
-<p>Exemplu:</p>
-<pre><code>&gt;&gt;&gt; naran = &quot;Mario&quot;
-&gt;&gt;&gt; tinan = 30
-&gt;&gt;&gt; altura = 168
-</code></pre>
-<p>Print naran variabel:</p>
-<pre><code>&gt;&gt;&gt; print(naran)  
-&gt;&gt;&gt; print(tinan)  
-&gt;&gt;&gt; print(altura)  
-</code></pre>
-<p>Fo sai resultadu:</p>
-<pre><code>  Mario
+<p><code>Mario
   30
-  168
-</code></pre>
+  168</code></p>
+<h3 id="multipla-assignment">Multipla Assignment<a class="headerlink" href="#multipla-assignment" title="Permanent link">&para;</a></h3>
+<p>Iha python bele kria variabel barak no refere ba valor ida deit ka ita bele kria valor ida bele assign ba multipla variabel ka variabel oin-oin.</p>
+<p>Exemplu:</p>
+<p>Assign valor ida ba multipla variabel ka bele kria multipla variabel fo valor ida edit.</p>
+<p>```
+  a = b = c = 10</p>
+<p>print(a)
+  print(b)
+  print(c)
+  ```</p>
+<p>Assign multipla valor ba multipla variabel </p>
+<p>```
+  x, y, z = 10, 15, &ldquo;hello&rdquo;</p>
+<p>print (x)
+  print (y)
+  print (z)
+  ```</p>
 <h3 id="tipu-variabel">Tipu Variabel<a class="headerlink" href="#tipu-variabel" title="Permanent link">&para;</a></h3>
 <p>Tipu python variabel iha rua local variabel no global variabel.</p>
-<p><strong>Local Variabel</strong> </p>
-<p>Local variabel mak defini iha funsaun nia laran no iha scope funsaun nia laran.</p>
+<p><strong>Local Variabel</strong></p>
+<p>Local variabel mak defini iha funsaun nia laran no iha local scope.</p>
 <p>Exemplu:</p>
-<pre><code>  # Deklara funsaun  
+<p><code># Deklara funsaun  
   def func():  
       # defini lokal variabel 
       a = 20  
-      print(&quot;Variabel a mak&quot;, a)  
+      print("Variabel a mak", a)  
     # bolu funsaun
-  func() 
-</code></pre>
+  func()</code></p>
 <p>Fo sai rezultadu</p>
-<pre><code> Variabel a mak 20
-</code></pre>
-<p><strong>Global Variabel</strong></p>
-<p>Global Variabel bele uza jeral ka laos iha funsaun nia laran no bele uza mos iha funsaun nia laran. Python global variabel ita bele defini iha funsaun nia laran uza global keyword.</p>
+<p><code>Variabel a mak 20</code></p>
+<p>Global Variabel bele uza jeral ka laos iha funsaun nia laran ka global scope no bele uza mos iha funsaun nia laran ka local scope maybe tenki uza global keyword. </p>
 <p>Exemplu:</p>
-<pre><code>  a = 20
+<p><code>a = 20 # Global variabel
   # Deklara funsaun  
   def func():  
-      # defini lokal variabel 
-      print(&quot;global a mak&quot;, a)  
-
+      print("global a mak", a)  
       # bolu funsaun
-  func()
-</code></pre>
+  func()</code></p>
 <p>Fo sai rezultadu</p>
 <p><code>global a mak 20</code></p>
-<p>Exemplu global variabel seluk:</p>
+<p>Exemplu global variabel iha funsaun nia laran uza global keyword:</p>
 <pre><code># Deklara funsaun  
 def func():
     global a
     a = 20
     # defini lokal variabel 
     print(&quot;global a mak&quot;, a)  
-
-    # bolu funsaun
+# bolu funsaun
 func()
 </code></pre>
 <p>Fo sai rezultadu</p>
@@ -255,62 +238,7 @@ def func():
     h = 2  # defini lokal variabel 
     print(&quot;global&quot;, a, &quot;no local&quot;, h)  
 
-func() #bolu funsaun 
-print(h) 
-</code></pre>
-<p>Iha kazu seluk koko print variabel h maibe mosu error tanba ita bolu variabel iha scope nia laran maibe ita print sai husi scope ka out of scope.</p>
-<pre><code>global 20 no local 2
----------------------------------------------------------------------------
-NameError                                 Traceback (most recent call last)
-&lt;ipython-input-81-fc300bf1c91f&gt; in &lt;module&gt;
-      9     # bolu funsaun
-     10 func()
----&gt; 11 print(h)
-
-NameError: name 'h' is not defined
-</code></pre>
-<h3 id="python-tipu-data">Python - Tipu Data<a class="headerlink" href="#python-tipu-data" title="Permanent link">&para;</a></h3>
-<pre><code>my_var = 2
-</code></pre>
-<p><code>my_var</code> mak identifika ona naran husi variabel no valor mak 2 </p>
-<p>Valor nebe ita fo iha variabel ne&rsquo;e bele troka ba valor seluk. Atu asesu ba variabel importante ita hatene fo variabel nia naran.</p>
-<pre><code>&gt;&gt;&gt; my_var=&quot;Antonio&quot;
-&gt;&gt;&gt; print(my_var)
-'Antonio'
-</code></pre>
-<p>Tipu data husi variabel nebe ita kria no fo nia valor bele identifika hanesan tuir mai ne&rsquo;e bele integer, string ka float no boolean.</p>
-<p><strong>String</strong></p>
-<pre><code>&gt;&gt;&gt; a = &quot;Jose&quot;
-&gt;&gt;&gt; print(a)
-'Jose'
-&gt;&gt;&gt; type(a)
-&lt;class 'str'&gt;
-</code></pre>
-<p><strong>Integer</strong></p>
-<pre><code>&gt;&gt;&gt; b = 20
-&gt;&gt;&gt; print(b)
-20
-&gt;&gt;&gt; type(b)
-&lt;class 'int'&gt;
-</code></pre>
-<p><strong>Float</strong></p>
-<pre><code>&gt;&gt;&gt; c = 2.0
-&gt;&gt;&gt; print(c)
-2.0
-&gt;&gt;&gt; type(c)
-&lt;class 'float'&gt;
-</code></pre>
-<p><strong>Boolean</strong></p>
-<pre><code>&gt;&gt;&gt; e = True
-&gt;&gt;&gt; print(e)
-True
-&gt;&gt;&gt; type(e)
-&lt;class 'bool'
-&gt;&gt;&gt; e = False
-&gt;&gt;&gt; print(e)
-False
-&gt;&gt;&gt; type(e)
-&lt;class 'bool'&gt;
+func() # bolu funsaun 
 </code></pre>
               
             </div>
@@ -319,7 +247,7 @@ False
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../python_list_slicing/" class="btn btn-neutral float-right" title="Python Slice">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../python_data_type/" class="btn btn-neutral float-right" title="Python Tipu Data">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
         <a href="../execute_python_syntax/" class="btn btn-neutral" title="Python Sintase"><span class="icon icon-circle-arrow-left"></span> Previous</a>
@@ -351,7 +279,7 @@ False
         <span><a href="../execute_python_syntax/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="../python_list_slicing/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="../python_data_type/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>

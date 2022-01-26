@@ -9,7 +9,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Python Introdusaun - Niko Docs</title>
+  <title>Python Tipu Data - Niko Docs</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
 
   <link rel="stylesheet" href="../css/theme.css" />
@@ -19,8 +19,8 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Python Introdusaun";
-    var mkdocs_page_input_path = "python_overview.md";
+    var mkdocs_page_name = "Python Tipu Data";
+    var mkdocs_page_input_path = "python_data_type.md";
     var mkdocs_page_url = null;
   </script>
   
@@ -57,17 +57,7 @@
                 </ul>
                 <p class="caption"><span class="caption-text">Python Baziku</span></p>
                 <ul class="current">
-                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Python Introdusaun</a>
-    <ul class="current">
-    <li class="toctree-l2"><a class="reference internal" href="#saida-mak-python-bele-halo">Saida mak python bele halo?</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#tanba-sa-iha-python">Tanba sa iha Python?</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#kompara-python-syntax-ho-lingua-programasaun-sira-seluk">Kompara python syntax ho lingua programasaun sira seluk</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#exemplu">Exemplu</a>
-    </li>
-    </ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../python_overview/">Python Introdusaun</a>
                     </li>
                     <li class="toctree-l1"><a class="" href="../python_environment_setup">Python Kria Enviromentu</a>
                     </li>
@@ -75,7 +65,13 @@
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="../python_variables/">Python Variabel</a>
                     </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../python_data_type/">Python Tipu Data</a>
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Python Tipu Data</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#string">String</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#float">Float</a>
+    </li>
+    </ul>
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="../python_list_slicing/">Python Slice</a>
                     </li>
@@ -125,7 +121,7 @@
         
       
     
-    <li>Python Introdusaun</li>
+    <li>Python Tipu Data</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -136,43 +132,86 @@
           <div role="main">
             <div class="section">
               
-                <h2 id="saida-mak-python">Saida mak Python?<a class="headerlink" href="#saida-mak-python" title="Permanent link">&para;</a></h2>
-<p>Python mak lingua programasaun ida nebe kria husi Guido van Rossum no publika iha tinan 1991.</p>
-<p>Python bele uza ba:</p>
-<ol>
-<li>Web development (server-side),</li>
-<li>Software development,</li>
-<li>Matematika,</li>
-<li>System scripting</li>
-</ol>
-<h3 id="saida-mak-python-bele-halo">Saida mak python bele halo?<a class="headerlink" href="#saida-mak-python-bele-halo" title="Permanent link">&para;</a></h3>
-<ol>
-<li>Python bele uza iha server hodi kria aplikasaun web.</li>
-<li>Python bele hamutuk ho software modi kria workflows.</li>
-<li>Python bele konekta ba sistema basedadus. ida ne&rsquo;e bele lee no modifika dokumentu sira.</li>
-<li>python bele trata ho dadus nebe boot no performa matematika complexu.</li>
-<li>Python bele uza hodi halo prototipu nebe lais ka bele dezenvole software nebe prontu hodi uza. </li>
-</ol>
-<h3 id="tanba-sa-iha-python">Tanba sa iha Python?<a class="headerlink" href="#tanba-sa-iha-python" title="Permanent link">&para;</a></h3>
-<ol>
-<li>Python servisu ho diferente plataforma sira hanesan(Windows, Mac, Linux, Raspberry Pi, etc).</li>
-<li>Python iha sintase nebe simples hanesan  ho lingua Ingles.</li>
-<li>Python iha sintase nebe bele permiti hodi dezenvolve kria programa ho lina kiik kompara ho liangua programasaun balu.</li>
-<li>Python bele trata forma ho procedimental, object-oriental, ka forma funsional. </li>
-</ol>
-<p>Saida presiza hatene husi Python maka:</p>
-<ol>
-<li>Verzaun python agora iha python 2 no python 3, python2 nia wainhira install ba sistema operasaun linux nia iha ona pakote python ho verzaun 2 python verzaun 2 popular maibe iha limitasaun ba sitase balu no la atualizadu. Python3 ne&rsquo;e atualizadu no iha feature foun husi python.</li>
-<li>Iha totorial ida ne&rsquo;e python bele hakerek iha textu editor, python iha posibilidade bele hakerek integradu dezevolve iha enviromentuI ( IDE ), Pycharn, Netbeans no Jupyter notebook.</li>
-</ol>
-<h3 id="kompara-python-syntax-ho-lingua-programasaun-sira-seluk">Kompara python syntax ho lingua programasaun sira seluk<a class="headerlink" href="#kompara-python-syntax-ho-lingua-programasaun-sira-seluk" title="Permanent link">&para;</a></h3>
-<ol>
-<li>Python dezenu ba abilidade hodi lee hanesan ho linagua English nebe influensia husi Matematika.</li>
-<li>Python uza lina foun kompleta hanesan command, kontrariu ho lingua programasaun seluk dala barak uza semicolons ka parente( ; ka () ).</li>
-<li>Python depende ba indentation uza espasu mamuk hodi scope ka hafahe hanesan loops, functions no classes. Linguan programasaun seluk dala barak uza curly-brackets hanesan objectivu</li>
-</ol>
-<h3 id="exemplu">Exemplu<a class="headerlink" href="#exemplu" title="Permanent link">&para;</a></h3>
-<pre><code>print(&quot;Hello, World!&quot;)
+                <h2 id="tipu-data">Tipu Data<a class="headerlink" href="#tipu-data" title="Permanent link">&para;</a></h2>
+<p>Tipu data husi variabel nebe ita kria no fo nia valor bele identifika hanesan tuir mai ne&rsquo;e bele integer, string ka float no boolean.</p>
+<h3 id="string">String<a class="headerlink" href="#string" title="Permanent link">&para;</a></h3>
+<p>String (str) mak tipu data ida nebe fo sai karakteristika iha simbolu ho marka quotation ka  dupla marka quotation.</p>
+<p>Single quotation</p>
+<pre><code>&gt;&gt;&gt; a = 'Jose'
+&gt;&gt;&gt; type(a)
+&lt;class 'str'&gt;
+</code></pre>
+<p>Double quotation</p>
+<pre><code>&gt;&gt;&gt; b = &quot;Maria&quot;
+&gt;&gt;&gt; type(b)
+&lt;class 'str'&gt;
+</code></pre>
+<p>### Integer</p>
+<p>Integer (int) mak tipu data ida nebe ho numeru decimal bele pozitivu no negativu husi 0 zero too 9, bele numeru octal no hexadecimal.</p>
+<p>Iha octal inisial ho <code>0o</code> no hexadecimal sei hahu ho <code>0x</code>.</p>
+<p>Valor Positivu</p>
+<pre><code>&gt;&gt;&gt; x = 10
+&gt;&gt;&gt; type(x)
+&lt;class 'int'&gt;
+</code></pre>
+<p>Valor Negativu</p>
+<pre><code>&gt;&gt;&gt; y = -10
+&gt;&gt;&gt; print(y)
+-10
+&gt;&gt;&gt; type(y)
+&lt;class 'int'&gt;
+</code></pre>
+<p>Valor boot</p>
+<pre><code>&gt;&gt;&gt; z = 100000000000000000000000
+&gt;&gt;&gt; print(z)
+100000000000000000000000
+&gt;&gt;&gt; type(z)
+&lt;class 'int'&gt;
+</code></pre>
+<p>Valor Octal</p>
+<pre><code>&gt;&gt;&gt; octalInt = 0o32
+&gt;&gt;&gt; print(octalInt)
+26
+&gt;&gt;&gt; type(octalInt)
+&lt;class 'int'&gt;
+</code></pre>
+<p>Valor Hexadecimal</p>
+<pre><code>&gt;&gt;&gt; hexInt = 0xEE
+&gt;&gt;&gt; print(hexInt)
+238
+&gt;&gt;&gt; type(hexInt)
+&lt;class 'int'&gt;
+</code></pre>
+<h3 id="float">Float<a class="headerlink" href="#float" title="Permanent link">&para;</a></h3>
+<p>Float mak tipu data ida nebe reprezenta numeru ho pontu, nebe ita hakerek ho pontu decimal ka ho string.</p>
+<p>Reprezenta float ho integer</p>
+<pre><code>&gt;&gt;&gt; x = float(10)
+&gt;&gt;&gt; print(x)
+10.0
+&gt;&gt;&gt; type(x)
+&lt;class 'float'&gt;
+</code></pre>
+<p>Reprezenta float ho string</p>
+<pre><code>&gt;&gt;&gt; y = float(&quot;10&quot;)
+&gt;&gt;&gt; print(y)
+10.0
+&gt;&gt;&gt; type(y)
+&lt;class 'float'&gt;
+</code></pre>
+<p>### Boolean</p>
+<p>Boolean tipu data ida nebe ho valor rua deit mak True no False nebe existi.</p>
+<pre><code>&gt;&gt;&gt; a = True
+&gt;&gt;&gt; type(a)
+&lt;class 'bool'&gt;
+
+&gt;&gt;&gt; b = False
+&gt;&gt;&gt; type(b)
+&lt;class 'bool'&gt;
+</code></pre>
+<p>Kompara entre valor rua </p>
+<pre><code>x = 5
+y = 10
+print(bool(x==y))
 </code></pre>
               
             </div>
@@ -181,10 +220,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../execute_python_syntax/" class="btn btn-neutral float-right" title="Python Sintase">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../python_list_slicing/" class="btn btn-neutral float-right" title="Python Slice">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../python_tutorial/" class="btn btn-neutral" title="Python Tutorial"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../python_variables/" class="btn btn-neutral" title="Python Variabel"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -210,10 +249,10 @@
     <span class="rst-current-version" data-toggle="rst-current-version">
       
       
-        <span><a href="../python_tutorial/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../python_variables/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="../execute_python_syntax/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="../python_list_slicing/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>
