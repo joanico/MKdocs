@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Python Slice - Niko Docs</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../css/theme.css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
+  <link href="../extra_css/extra.css" rel="stylesheet" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Python Slice";
+    var mkdocs_page_input_path = "python_list_slicing.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/rust.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> Niko Docs</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <p class="caption"><span class="caption-text">Matadalan</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../python_tutorial/">Python Tutorial</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Python Baziku</span></p>
+                <ul class="current">
+                    <li class="toctree-l1"><a class="reference internal" href="../python_overview/">Python Introdusaun</a>
+                    </li>
+                    <li class="toctree-l1"><a class="" href="../python_environment_setup">Python Kria Enviromentu</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../execute_python_syntax/">Python Sintase</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../python_variables/">Python Variabel</a>
+                    </li>
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Python Slice</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#syntax">Syntax:</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#indexing">Indexing</a>
+    </li>
+    </ul>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Python Avansadu</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../python_advanced_tutorials/">Python Tutorial Avansadu</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Python Tutorial Seluk</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../python_other_tutorials/">Python Tutorial Seluk</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Python Topiku</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../python_notifikasaun/">Python Notifikasaun</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Konaba</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../about/">Referensia</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">Niko Docs</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Python Baziku &raquo;</li>
+        
+      
+    
+    <li>Python Slice</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h2 id="python-list-slicing">Python List Slicing<a class="headerlink" href="#python-list-slicing" title="Permanent link">&para;</a></h2>
+<p>Python iha lista bolu slicing hanesan pratika komun no dala barak uza hanesan meus ida ba programmer sira hodi rezolve problema efisiente șira. Konsidera lista python nian, In order atu hetan asesu ba elementu oioin iha lista ida, ita presiza ko&rsquo;a lista, dalan ida atu halo ida ne&rsquo;e mak uza slicing operator simples.</p>
+<p>Iha operator ida ne&rsquo;e, ida ita bele espesifika atu hahu ko&rsquo;a/slice iha nebe no remata iha nebe no mos espasu hakat dala hira, no ikus liu sei fo sai rezultadu iha lista nebe ezisti ona.</p>
+<h3 id="syntax">Syntax:<a class="headerlink" href="#syntax" title="Permanent link">&para;</a></h3>
+<pre><code>Lst [Initial:End:IndexJump]
+</code></pre>
+<p>Karik List iha leten maka expresaun iha leten sei exekuta parte husi lista index hahu no remata no espasu ka halat medida indexJump.</p>
+<h3 id="indexing">Indexing<a class="headerlink" href="#indexing" title="Permanent link">&para;</a></h3>
+<p><strong>1. Positive Indexes</strong></p>
+<pre><code># Hahu ho lista
+List = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+# copy sai lista ka fo sai lista
+print(List[::])
+
+Fo sai rezultadu
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+</code></pre>
+<p><strong>2. Negative Indexes</strong></p>
+<pre><code># INDEX
+# post = [ 0| 1 | 2 | 3 | 4 | 5]
+# Nega = [-5|-4 |-3 |-2 | -1]
+
+# Hahu ho lista 
+List = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+# Fo sai lista ho negativu
+print(List[-10::1])
+</code></pre>
+<p>Fo sai rezultadu
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]</p>
+<p><strong>3. Slicing</strong></p>
+<pre><code># Hahu ho lista 
+List = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+print(List[1:5]) # 1 reprezenta index hahu no 5 reprezenta index remata no rezultadu hatudu katak [1, 2, 3, 4] sei foti deit valor antes index 5 ba kotuk
+</code></pre>
+<p>Fosai rezultadu 
+[1, 2, 3, 4]</p>
+<pre><code># Hahu ho lista 
+List = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+# Fo sai rezultadu hanesan range 
+print(List[3:9:2]) # 3 reprezenta index hahu to remata 9 no 2 step
+</code></pre>
+<p>Fosai rezultadu 
+[3, 5, 7]</p>
+<pre><code># Hahu ho lista 
+List = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+# Fo sai rezultadu hanesan range
+print(List[::]) # :: reprezenta index hahu no index remata ka fo sai lista tomak la slice
+</code></pre>
+<p>Fosai rezultadu
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]</p>
+<pre><code># Hahu ho lista 
+List = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+# Fo sai rezultadu hanesan range
+print(List[::2]) # :: reprezenta index hahu no remata no 2 step
+</code></pre>
+<p>Fosai rezultadu
+[0, 2, 4, 6, 8]</p>
+<pre><code># Hahu ho lista 
+List = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+# reverze lista husi 0 ba 9
+print(List[::-1])
+# reverse lista no fo hakat ka step 3
+print(List[::-3])
+
+print(List[:1:-2])
+</code></pre>
+<p>Fosai rezultadu</p>
+<p>[9, 8, 7, 6, 5, 4, 3, 2, 1, 0]
+[9, 6, 3, 0]
+[9, 7, 5, 3]</p>
+<pre><code># Hahu ho lista 
+List = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+# Ida nee fo sai rezultadu ho lista mamuk tanba hahu ho index sanulu maibe iha lista la too sanulu no step 2 la iha rezultadu tanba la iha falor nebe hakat liu index sanulu 
+# karik bele kria ezemplu seluk hanesan print(List[4::2]) sei fo sai rezultadu [4, 6, 8]
+print(List[10::2])
+
+# Iha list slicing index hahu to remata ita la bele fo hanesan iha exemplu kraik nee nia sei la bele fo rezultadu.
+# Karik atu fo sai rezultadu iha index hahu no remata la bele hanesan print(List[1:4:1]) sei fo sai rezultadu [1, 2, 3]
+print(List[1:1:1])
+
+# Iha list slicing index negative mos hanesan hahu to remata ita la bele fo hanesan iha exemplu kraik nee nia sei la bele fo rezultadu.
+# Karik atu fo sai rezultadu iha index hahu no remata la bele hanesan print(List[-1:-4:-1]) sei fo sai rezultadu [9, 8, 7]
+print(List[-1:-1:-1])
+
+# Iha slice mos ita labele fo valor remata to zero
+print(List[:0:])
+</code></pre>
+<p>Fosai rezultadu
+[]
+[]
+[]
+[]</p>
+<pre><code># Hahu ho lista 
+List = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+# Fo sai rezultadu hahu husi index 4 too remata no hakat espasu 2
+print(List[1:3])
+
+# Fo sai rezultadu hahu husi index 1 too remata 4 no hakat espasu 2
+print(List[1:4:1])
+
+# Fo sai rezultadu reverse no remata iha index 4 no hakat espasu ida
+print(List[-1:-4:-1]) 
+</code></pre>
+<p>Fosai rezultadu
+[1, 2]
+[1, 2, 3]
+[9, 8, 7]</p>
+<pre><code>colors = ['red', 'green', 'blue', 'orange']
+print(colors[1:3])
+</code></pre>
+<p>Fosai rezultadu
+[&lsquo;green&rsquo;, &lsquo;blue&rsquo;]</p>
+<p><strong>4. Assign data</strong>|</p>
+<pre><code># Hahu ho lista 
+List = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+# Fo sai lista 
+print(List[::])
+</code></pre>
+<p>Fosai rezultadu
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]</p>
+<pre><code># assign valor ba array nia laran
+List[4:6] = [10, 11]
+print(List)
+</code></pre>
+<p>Fosai rezultadu
+[0, 1, 2, 3, 10, 11, 6, 7, 8, 9]</p>
+<p><strong>5. Slice String</strong></p>
+<pre><code>b = &quot;Hello, World!&quot;
+print(b[2:5])
+</code></pre>
+<p>Fosai rezultadu
+llo</p>
+<pre><code>print(b[-1::-1])
+</code></pre>
+<p>Fosai rezultadu
+!dlroW ,olleH</p>
+<pre><code>print(b[:5])
+</code></pre>
+<p>Fosai rezultadu
+Hello</p>
+<pre><code>print(b[-5:-2])
+</code></pre>
+<p>Fosai rezultadu
+orl</p>
+<p><strong>6. Python slice() Function</strong></p>
+<pre><code>b = &quot;Hello, World!&quot;
+s = slice(5) # sei foti letra 4 antes index 5 ba kotuk
+print(b[s])
+</code></pre>
+<p>Fosai rezultadu
+Hello</p>
+<pre><code>b = &quot;Hello, World!&quot;
+s = slice(3, 6) # sei foti letra hahu husi index 3 too antes index 6 ba kotuk
+print(b[s])
+</code></pre>
+<p>Fosai rezultadu
+lo,</p>
+<pre><code>b = &quot;Hello, World!&quot;
+s = slice(3, 10, 2) # sei foti letra hahu husi index 3 too antes index 10 ba kotuk no fo sai deit letra husi espasu 2
+print(b[s])
+</code></pre>
+<p>Fosai rezultadu
+l,Wr</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../python_advanced_tutorials/" class="btn btn-neutral float-right" title="Python Tutorial Avansadu">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../python_variables/" class="btn btn-neutral" title="Python Variabel"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../python_variables/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../python_advanced_tutorials/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>
