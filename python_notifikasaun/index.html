@@ -132,28 +132,28 @@
                 <h2 id="uza-python-hodi-kalkula-loron-moris">Uza Python hodi kalkula loron moris<a class="headerlink" href="#uza-python-hodi-kalkula-loron-moris" title="Permanent link">&para;</a></h2>
 <p>Kalkula loron moris uza python.</p>
 <h3 id="vizaun-jeral">Vizaun Jeral<a class="headerlink" href="#vizaun-jeral" title="Permanent link">&para;</a></h3>
-<p>Iha topiku ida nee sei koalia konaba uza funsaun python hodi halo kalkula tinan automatika ho import file csv no dataframe hodi fo sai rezultadu.</p>
-<p>Exemplu: Fahe subsidiu bazeia ba ema nia tinan ka ita bele hatene ohin loron ema nain hira mak selebra tinan.</p>
+<p>Iha tópiku ida ne&rsquo;e sei ko&rsquo;alia kona-ba uza funsaun python hodi halo kalkula tinan automátiku ho importa filé csv no dataframe hodi fó sai rezultadu.</p>
+<p>Ezemplu: Fahe subsídiu bazeia ba ema nia tinan ka ita bele hatene ohin loron ema na&rsquo;in hira mak selebra tinan.</p>
 <h3 id="instrumentu">Instrumentu<a class="headerlink" href="#instrumentu" title="Permanent link">&para;</a></h3>
-<p>Instrumentu nebe sei uza mak :</p>
+<p>Instrumentu ne&rsquo;ebé sei uza mak :</p>
 <ol>
-<li>Asegura katak ita instala ona python2 ka python3 iha ita nia laptop</li>
-<li>Install jupyter notebook ka lab</li>
-<li>Install python pandas</li>
+<li>Asegura katak ita instala ona python2 ka python3 iha ita-nia laptop</li>
+<li>Instala jupyter notebook ka lab</li>
+<li>Instala python pandas</li>
 </ol>
 <h3 id="prosesu-exekuta">Prosesu Exekuta<a class="headerlink" href="#prosesu-exekuta" title="Permanent link">&para;</a></h3>
 <ol>
 <li>
-<p>Rejistu tinan iha excel file ho <code>No</code>, <code>Municipio</code>, <code>Posto</code>, <code>Suco</code>, <code>Aldeia</code>, <code>Naran</code>,<code>Ke-BI</code>, <code>Data-Moris</code> no save ho tipu format csv iha diretory nebe ita atu halo kalkulasaun.</p>
+<p>Rejistu tinan iha excel filé ho <code>No</code>, <code>Municipio</code>, <code>Posto</code>, <code>Suco</code>, <code>Aldeia</code>, <code>Naran</code>,<code>Ke-BI</code>, <code>Data-Moris</code> no save ho tipu formatu csv iha diretory ne&rsquo;ebé ita atu halo kalkulasaun.</p>
 </li>
 <li>
-<p>Loke Jupyter lab iha terminal <code>jupyter lab</code></p>
+<p>Loke Jupyter lab iha terminál <code>jupyter lab</code></p>
 </li>
 </ol>
 <p><img alt="run jupyter" src="https://i.postimg.cc/rF6p0Lk0/Screen-Shot-2021-03-19-at-9-58-25-AM.png" /></p>
 <ol start="3">
 <li>
-<p>Kria file jupyter ida ho naran <code>kalkula_tinan</code> hamutuk ho file excel nebe ita rai hanesan file csv.</p>
+<p>Kria filé jupyter ida ho naran <code>kalkula_tinan</code> hamutuk ho file excel ne&rsquo;ebé ita rai hanesan filé csv.</p>
 </li>
 <li>
 <p><strong>Flowchart 1 konaba prosesu kalkula tinan.</strong></p>
@@ -184,7 +184,7 @@
       elif tinan &lt;= 60:
         return &quot;Favor hein ita nia subsidu&quot;
 </code></pre>
-<p>​   4.5. Exekuta python no fo sai rezultadu</p>
+<p>​   4.5. Ezekuta python no fo sai rezultadu</p>
 <pre><code>  df['age'] = df['data_moris'].apply(kalkula_tinan)
   df['mensajen'] = df['age'].apply(notifikasaun)
   df
@@ -221,7 +221,7 @@
        elif tinan &lt;= 60:
            return &quot;Favor hein ita nia subsidu&quot;
 </code></pre>
-<p>​   5.4 Exekuta rezultadu ho python </p>
+<p>​   5.4 Ezekuta rezultadu ho python </p>
 <pre><code>   # kria koluna foun ho naran tinan no aplika tinan
    df['tinan'] = df['Loron_Moris'].apply(kalkula_tinan)
    df['mensajen'] = df['tinan'].apply(notifikasaun)
