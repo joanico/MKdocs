@@ -9,7 +9,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Referensia - Niko Docs</title>
+  <title>Python environment setup - Niko Docs</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
 
   <link rel="stylesheet" href="../css/theme.css" />
@@ -19,8 +19,8 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Referensia";
-    var mkdocs_page_input_path = "about.md";
+    var mkdocs_page_name = "Python environment setup";
+    var mkdocs_page_input_path = "python_environment_setup.md";
     var mkdocs_page_url = null;
   </script>
   
@@ -52,7 +52,7 @@
       <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
                 <p class="caption"><span class="caption-text">Python Baziku</span></p>
                 <ul>
-                    <li class="toctree-l1"><a class="" href="../python_environment_setup">Python Hahu Kria Enviromentu</a>
+                    <li class="toctree-l1"><a class="" href=".">Python Hahu Kria Enviromentu</a>
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="../execute_python_syntax/">Python Sintase</a>
                     </li>
@@ -79,10 +79,8 @@
                     </li>
                 </ul>
                 <p class="caption"><span class="caption-text">Konaba</span></p>
-                <ul class="current">
-                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Referensia</a>
-    <ul class="current">
-    </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../about/">Referensia</a>
                     </li>
                 </ul>
       </div>
@@ -105,12 +103,8 @@
     <li><a href="..">Docs</a> &raquo;</li>
     
       
-        
-          <li>Konaba &raquo;</li>
-        
-      
     
-    <li>Referensia</li>
+    <li>Python environment setup</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -121,20 +115,54 @@
           <div role="main">
             <div class="section">
               
-                <h3 id="bele-hare-referensia-sira-iha-nee">Bele hare referensia sira iha ne&rsquo;e<a class="headerlink" href="#bele-hare-referensia-sira-iha-nee" title="Permanent link">&para;</a></h3>
-<p>Bele hare docs iha ne&rsquo;e <a href="https://www.mkdocs.org/">Mkdocs</a></p>
-<p>Bele hare docs <a href="https://docs.readthedocs.io/en/stable/intro/getting-started-with-mkdocs.html">Read the docs</a></p>
+                <h2 id="python-hahu-no-kria-enviroment">Python - Hahu no Kria Enviroment<a class="headerlink" href="#python-hahu-no-kria-enviroment" title="Permanent link">&para;</a></h2>
+<p>Python disponivel iha variasaun bo’ot hosi plataforma inklui Linux no Mac OS X. Iha ne&rsquo;e oinsá atu setup ita-nia Python enviromentu.</p>
+<p><strong>Lokál Setup Enviromentu</strong> </p>
+<p>Loke terminál iha Linux ka Mac Os no hakerek <code>python</code> atu hatene rezultadu ita instala tiha ona no versaun ne&rsquo;ebé instala ona.</p>
+<h3 id="asesu-situs-python">Asesu situs Python<a class="headerlink" href="#asesu-situs-python" title="Permanent link">&para;</a></h3>
+<p>Python atualiza ona source code no dokumentu foun sira ne&rsquo;ebé disponivel ona iha ofisiál website hosi Python <a href="https://www.python.org/">https://www.python.org</a></p>
+<p>Ite bele download dokumentu python iha <a href="https://www.python.org/doc/">python doc</a>. Dokumentu sira ne&rsquo;e disponivel iha HTML, PDF no PostScript formats.</p>
+<h3 id="instalasaun-python">Instalasaun Python<a class="headerlink" href="#instalasaun-python" title="Permanent link">&para;</a></h3>
+<p>Distribuisaun Python disponivel iha variedade boot hosi plataforma sira. Ita presiza ba download kódigu bináriu balu aplikável ba iha ita-nia plataforma no instalasaun Python.</p>
+<p><strong>Unix no Instalasaun Linux</strong></p>
+<p>Iha Linux python eziste ona maibé ne’e sei ho versaun tuan atu atualiza versaun foun iha maneira oin-oin iha ne&rsquo;e hatudu de&rsquo;it maneira ida mak ho etapa simples atu halo instalasaun Python iha Unix/Linux machine.</p>
+<ul>
+<li>
+<p>Loke Web browser no ba iha <a href="https://www.python.org/downloads/">download python </a></p>
+</li>
+<li>
+<p>Halo tuir link download zipped source code disponivel ba Unix/Linux.</p>
+</li>
+<li>
+<p>Download no extract filé. Edita módulu/setup file ne&rsquo;ebé mak ita hakarak ba kostume opsaun balu.</p>
+</li>
+<li>
+<p>Run ./configure script</p>
+</li>
+<li>
+<p>Make</p>
+</li>
+<li>
+<p>Make install</p>
+</li>
+</ul>
+<p>Instalasaun Python ne’e iha lokasaun standar <code>/usr/local/bin</code> no libraria sira iha <code>/usr/local/lib/pythonXX</code> iha ne&rsquo;ebé XX iha versaun Python.</p>
+<p><strong>Instalasaun Windows</strong>
+ Iha ne’e mak etapa atu instala Python ba iha Windows machine.</p>
+<ul>
+<li>Loke Web browser no ba iha <a href="https://www.python.org/downloads/">download python</a></li>
+<li>Halo tuir link ba iha instalasaun Windows python-XYZ.msi dokumentus iha ne&rsquo;ebé XYZ iha versaun ita presiza halo instalasaun.</li>
+<li>Atu usa instalasaun iha ne’e python-XYZ.msi, sistema Windows suporta Microsoft Installer 2.0. Rai dokumentu instalasaun ba ita-nia lokál machine no run ida ne’e atu hetan nia rezultadu se nia machine suporta MSI.</li>
+<li>Run dokumentu download. Ne’e lori instalasaun Python wizard, ne&rsquo;ebé realiza fasil atu uza. Foin aseita iha defaul settings, hein to instalasaun hotu, no ita remata.</li>
+</ul>
+<p><strong>Instalasaun Macintosh</strong></p>
+<p>Macintosh eziste ona Python. Maibé ne’e dala ruma sei versaun tuan ita presiza upgrade ba versaun foun. Hare <a href="http://www.python.org/download/mac/">download python</a> iha instrusaun ne’e hetan versaun agora ho extra tools ba suporta dezenvolve iha Mac. Iha folder Mac OS’s molok Mas OS X 10.3(realiza iha 2003)</p>
+<p>Jack Jansen mantein ida ne’e no ita bele asesu hotu atu hatama dokumentu ba iha nia website - <a href="http://www.cwi.nl/~jack/macpython.html">download python mac</a>
+Ita bele hetan detallu instalasaun kompletu ba instalasaun Mac OS.</p>
               
             </div>
           </div>
           <footer>
-  
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-      
-        <a href="../python_notifikasaun/" class="btn btn-neutral" title="Python Notifikasaun"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-      
-    </div>
   
 
   <hr/>
@@ -157,8 +185,6 @@
   <div class="rst-versions" role="note" aria-label="versions">
     <span class="rst-current-version" data-toggle="rst-current-version">
       
-      
-        <span><a href="../python_notifikasaun/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
     </span>
