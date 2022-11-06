@@ -1,0 +1,40 @@
+site_name: Niko Docs
+# ida nee kria navbar ka mennu
+nav:
+- Matadalan:
+    - 'Python Tutorial': 'python_tutorial.md'
+- Python Baziku:
+    - 'Python Introdusaun': 'python_overview.md'
+    - 'Python Kria Enviromentu': 'python_environment_setup'
+    - 'Python Sintase': 'execute_python_syntax.md'
+    - 'Python Variabel': 'python_variables.md'
+    - 'Python Slice': 'python_list_slicing.md'
+- Python Avansadu:
+    - 'Python Tutorial Avansadu': 'python_advanced_tutorials.md'
+- Python Tutorial Seluk:
+     - 'Python Tutorial Seluk': 'python_other_tutorials.md'
+- Python Topiku:
+    - 'Python Notifikasaun': 'python_notifikasaun.md'
+- Konaba:
+    - 'Referensia': 'about.md'
+#Kria tema 
+theme:
+    name: readthedocs #iha nebe ita bele troka readthedocs tema ba mkdocs
+    nav_style: red
+    highlightjs: true
+    hljs_languages:
+        - yaml
+        - rust
+#Kria extensaun markdown        
+markdown_extensions:
+    - smarty
+    - toc:
+        permalink: True
+    - sane_lists
+    
+# Kria extra css bele troka style
+extra_css:
+    - extra_css/extra.css
+    
+# Ida nee uza css wainhira atu deploy ba github    
+extra_css: [extra_css/extra.css]
