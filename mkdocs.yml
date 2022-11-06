@@ -1,13 +1,11 @@
 site_name: Niko Docs
 # ida nee kria navbar ka mennu
 nav:
-- Matadalan:
-    - 'Python Tutorial': 'python_tutorial.md'
 - Python Baziku:
-    - 'Python Introdusaun': 'python_overview.md'
-    - 'Python Kria Enviromentu': 'python_environment_setup'
+    - 'Python Hahu Kria Enviromentu': 'python_environment_setup'
     - 'Python Sintase': 'execute_python_syntax.md'
     - 'Python Variabel': 'python_variables.md'
+    - 'Python Tipu Data': 'python_data_type.md'
     - 'Python Slice': 'python_list_slicing.md'
 - Python Avansadu:
     - 'Python Tutorial Avansadu': 'python_advanced_tutorials.md'

@@ -1,4 +1,4 @@
-## Python - Kria Enviroment
+## Python - Hahu no Kria Enviroment
 
 Python mak disponivel ba iha variasaun bo’ot hosi plataforma inklui Linux no Mac OS X. Mai hatene oinsa setup ita nia Python enviromentu.
 

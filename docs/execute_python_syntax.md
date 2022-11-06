@@ -1,8 +1,8 @@
 ## Python - Sintase Bazika
 
-Iha ne’e sei aprende sintase bazika ho python3.Lian programasaun komputer kompostu husi liafuan ne’ebe defini ona no bolu liafuan-xavi (keyword), regra ida nebe preskrita kada liafuan-savi mak hanaran sintase(syntax)
+Iha ne’e sei aprende sintase bázika ho python3. Lian programasaun kompostu husi liafuan ne'ebé define ona no bolu liafuan xave (keyword), regra ida ne'ebé preskrita kada liafuan xave mak hanaran sintase(syntax)
 
-Python3 interprete defini ona liafuan-xavi iha 33, atu hatene kada liafuan-xavi bele hare iha lista tuir mai hahu exekuta python.
+Python3 intérprete define ona liafuan xave iha 33, atu hatene kada liafuan xave bele hare iha lista tuir mai hahú ezekuta python.
 
 ```
 ~ » python                                                                                                                                  niko@Joanicos-Air
@@ -33,35 +33,35 @@ break               for                 not
 
 ### Programa Python dahuluk
 
-Ezekuta programa sira ne'ebe diferente modu programasaun.
+Ezekuta programa sira ne'ebé diferente modu programasaun.
 
 **a. Modu Interativu Programasaun**
 
-Modu Interativu mak command line ne'ebé fó exekuta direta ka print imediata kada deklarasaun ne'ebe la ho file script hanesan parametru ida ne'ebe hatudu iha prompt tuir mai ne'e:
+Modu Interativu mak command line ne'ebé fó ezekuta direta ka print imediata kada deklarasaun ne'ebé la ho filé skript hanesan parámetru ida ne'ebé hatudu iha prompt tuir mai ne'e:
 
 ```
 >>> print("Hello Timor")
 ```
 
-Exekuta ho python verzaun 3 uza print deklarasaun ho parentes hanesan *print ("Hello, Timor!")* nia rezultadu hanesan ne'e:
+Ezekuta ho python versaun 3 uza print deklarasaun ho parentes hanesan print ("Hello, Timor!") nia rezultadu hanesan ne'e:
 
 ```
 Hello Timor
 ```
 
-**b. Programasaun Modu Script (Script Mode Programming)**
+**b. Programasaun Modu Skript (Script Mode Programming)**
 
-Programasaun Modu Script mak ezukusaun programa ida nebe ita hakerek hanesan file ida no fo naran ho nia extensaun *.py, no ita bele hakerek file ne'e iha ita nia text editor ka vim.
+Programasaun Modu Script mak ezekusaun programa ida ne'ebé ita hakerek hanesan filé ida no fó naran ho nia estensaun *.py, no ita bele hakerek filé ne'e iha ita-nia testu editór ka vim.
 
-Iha ezemplu ida ne'e uza vim iha terminal ubuntu nian hahu ketik iha terminal ~ nano teste.py
+Iha ezemplu ida ne'e uza vim iha terminál ubuntu nian hahú ketík iha terminál ~ nano teste.py
 
-no hakerek script hanesan iha ezemplu:
+no hakerek skript hanesan iha ezemplu:
 
 ```
 print ("Hello, Timor!")
 ```
 
-hanehan iha butaun CTRL + x no hanehan enter hodi rai ita nia file.Tuir mai exekuta file nebe ita rai hanesan iha exemplu
+hanehan iha butaun CTRL + x no hanehan enter hodi rai ita-nia filé.Tuir mai ezekuta filé ne'ebé ita rai hanesan iha ezemplu
 
 ```
 ~ python teste.py
@@ -73,7 +73,7 @@ Fó-sai rezultadu hanesan tuir mai ne'e:
 Hello, Timor!
 ```
 
-Maneira seluk atu ezekuta python script ida ita halo mudansa iha file teste.py
+Maneira seluk atu ezekuta python skript ida ita halo mudansa iha filé teste.py
 
 ```
 !/usr/bin/python
@@ -96,21 +96,18 @@ Hello, Timor!
 
 ### Python Identifikador (Python Identifiers)
 
-Python Identifikador mak naran ida ne'ebé uza hodi identifika variável, funsaun, klase, module ka objetu seluk. Identifikador hahú ho letra A to'o Z ka a to'o z ka underscore ( _ ) tuir zero ka letra barak liu ho underscores no díjitu (0 to'o ba 9).
+Python Identifikador mak naran ida ne'ebé uza hodi identifika variavel, funsaun, klase, módulu ka objetu seluk. Identifikador hahú ho letra A to'o Z ka a to'o z ka underscore ( _ ) tuir zero ka letra barak liu ho underscores no díjitu (0 to'o ba 9).
 
-Python la autoriza karakter hanesan @, $, no % iha identifikador. Iha neʼe mak fó naran konvensaun ba Python identifikador :
+Python la autoriza karakter hanesan @, $, no % iha identifikador. Iha ne'e mak fó naran konvensaun ba Python identifikador :
 
-- Klase naran hahu ho letra boot. Indentifikador sira seluk ho letra kiik.
+- Klase naran hahú ho letra boot. Indentifikador sira seluk ho letra ki'ik.
+- Identifikador ida hahú ho underscore úniku ne'ebé indika katak identifikador ne'e privadu.
+- Identifikador ida hahú ho underscores rua ne'ebé indika identifikador ne'ebé privadu maka'as.
+- Karik identifikador mós termina ho underscores trailing rua, identifikador ne'ebé mak define lian ho naran espesiál.
 
-- Identifikador ida hahu ho underscore uniku ne'ebé indika katak identifikador ne'e privadu.
+### Liña no Identasaun (Lines and Indentation)
 
-- Identifikador ida hahu ho underscores rua ne'ebé indika identifikador ne'ebé privadu maka'as.
-
-- Karik identifikador mos termina ho underscores trailing rua, identifikador ne ' ebé mak defini lian ho naran espesiál.
-
-### Lina no Identasaun (Lines and Indentation)
-
-Python la fornese iha braces hodi hatudu bloku sira kona-ba kódigu ba klase no definisaun funsaun ka kontrola movimentu( flow control ). Espasu kada lina iha klase ka funsaun iha espasu 4 ka kada tab ida. Pur ezemplu −
+Python la fornese iha braces hodi hatudu bloku sira kona-ba kódigu ba klase no definisaun funsaun ka kontrola movimentu( flow control ). Espasu kada liña iha klase ka funsaun iha espasu 4 ka kada tab ida. Pur ezemplu −
 
 ```
 class teste():
@@ -138,7 +135,7 @@ paragrafo = """Ida mak paragrado.""”
 
 ### Kometariu iha Python (Comments in Python)
 
-Komentáriu iha PythonSinal Hash (#) iha python hatudu katak ida ne'e atu halo ka hakerek komentariu konaba ita nia script nebe ita halo.
+Komentáriu iha Python Sinal Hash (#) iha python hatudu katak ida ne'e atu halo ka hakerek komentáriu kona-ba ita-nia skript ne'ebé ita halo.
 
 ```
 #!/usr/bin/python
@@ -152,7 +149,7 @@ Fó-sai rezultadu hanesan tuir mai ne'e:
 Hello, Python!
 ```
 
-Ita bele ketik komentáriu ida iha liña ne'ebe hanesan hafoin deklarasaun ka expresaun
+Ita bele ketík komentáriu ida iha liña ne'ebé hanesan hafoin deklarasaun ka espresaun
 
 ```
 name = "Madisetti" # Ida ne'e halo komentariu fila fali
