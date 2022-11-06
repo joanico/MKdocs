@@ -255,7 +255,8 @@ about     docs  img    js      python      search       site
 <p>Nota: Atu deploy ho github ba dahuluk ita presiza kria file <code>.gitignore</code> atu nune la bele deploy hotu directory <code>site/</code> ba ita nia repository. atu kria .gitignore mak hanesan:</p>
 <pre><code>$ echo &quot;site/&quot; &gt;&gt; .gitignore
 </code></pre>
-<p>Atu deploy ita nia dokumentasaun ita exekuta</p>
+<p>Atu deploy ita nia dokumentasaun ita bele checkout ba master branch ka iha branch seluk ita sempre deploy ba branch naran <code>gp-deploy</code> mak hanesan iha ezemplu ne&rsquo;e.
+Karik ita commit tia branch <code>gh-pages</code> mak ita nia dokumentu sira sei default ba master tanba ne&rsquo;e ita presiza deploy fila fali ho maneira hanesan iha leten konaba hari ita nia situs</p>
 <pre><code>$ mkdocs gh-deploy
 </code></pre>
 <p>Exekusaun kodigu ida leten iha kualker branch nebe deit maibe detallu iha <code>master</code>, ho mkdocs wainhira ita  deploy no run mkdocs gh-deploy sei kopia site ba branch gh-deploy no push ba github, <code>gp-deploy</code> nee autmatika wainhira ita run mkdocs gh-deploy. </p>
