@@ -1,84 +1,53 @@
-## Python - Kria Enviroment
+## Instala Python no setup enviromentu
 
-Python mak disponivel ba iha variasaun bo’ot hosi plataforma inklui Linux no Mac OS X. Mai hatene oinsa setup ita nia Python enviromentu.
+Estabelese Python no konfigura environment iha Windows, Linux, no macOS relativamente simples. Iha ne'e matadalan jerál konaba instala no konfigura python kada plataforma:
 
-Local Setup EnviromentuLoke terminal window no hakerek “python” atu hatene resultadu mak ita instala tiha ona no ne’ebe versaun mak instala ona.
+### Windows:
 
-- Unix(Solaris, Linux, FreeBSD, AIX, HP/UX, SunOS, IRIX, etc)
+1. **Download Python:**
+    - Ba Pajina [official Python website](https://www.python.org/).
+    - Klik iha tab "Downloads"
+    - Download verzaun ikus python ba Windows
 
-- Win 9x/NT/2000
+2. **Instala Python:**
+    - Instala python ne'ebé ita download ona
+    - Marka vistu iha lista "Add Python to PATH" durante prosesu instalasaun
+    - Halo tuir instalasaun sira no python sei instala iha ita-boot sira nia sistema operasaun Windows nian
 
-- Macintosh(Intel, PPC, 68K)
+3. **Verifika instalasaun:**
+    - Ketík `python --version` ka `python3 --version` hodi verifika katak python instala ona no cek nia verzaun
 
-- OS/2DOS (multiple versions)
+###  Linux:
 
-- PalmOS 
+1. **Instala uza Jestaun pakote(apt ba ubuntu/Debian):**
+    - Loke terminal ubuntu linux nian
+    - Update lista pakote: `sudo apt update`
+    - Instala Python: `sudo apt install python3` 
 
-- Nokia mobile phones
+2. **Verifika Instalasaun**:
+    - Ketik `python3 --version` iha terminal no verifika katak python instala ona no cek nia verzaun
 
-- Windows CEAcorn/RISC OS
+### macOS:
 
-- BeOS
+1. **Rekomendasaun Instala uza Homebrew:**
+    - Instala Homebrew karik ita seidauk iha. Vizita [Homebrew's official website](https://brew.sh/) hodi hare instrusaun konaba instalasaun python ba MacOs
+    - Bainhira instala tiha ona Homebrew, tuir mai loke ona Terminal
+    - Ketik `brew install python` hodi instala python3
+   
+2. **Verifika instalasaun:**
+    - Ketik `python3 --version` iha terminal no verifika katak python instala ona no cek nia verzaun.
+     
 
-- Amiga
+### Estabelese virtual Environment (Opsional maibé Rekomenda):
 
-- VMS/OpenVMS
-
-- QNX
-
-- VxWorks
-
-- Psion
-
-- Python mak portado ona ba iha Java no .NET virtual machines
-
-### Asesu situs Python
-
-  Ne’ebe mak aktualizadu no source code agora, binary sira, dokumentus, foun, ssl., mak disponivel ba official website hosi Python https://www.python.org/
-
-  Ite bele download dokumentus python iha https://www.python.org/doc/. Dokumentus mak disponivel iha HTML, PDF no PostScript formats.
-
-### Instalasaun Python
-
-Distribuisaun Python mak disponivel ba iha variadade bo’ot hosi plataforma. Ita presisa ba download binary code balu aplikável ba iha ita nia plataforma no instalasaun Python.
-
-Wainhira binary code ba ita nia plataforma ne’e la disponivel, ita presisa C ba compile source code manual. Kompline source code oferese flexibilidade barak iha termus hili hosi karakterístikus ne’ebe ita husu iha ita nia instalasaun.
-
-Iha ne’e liña jerál lalais hosi instalasaun Python ba iha plataforma oi-oin.
-
-**Unix no Instalasaun Linux**
-
-Iha ne’e mak step simples atu halo instalsaun Python iha Unix/Linux machine.
-
-- Loke Web browser no ba iha https://www.python.org/downloads/
-
-- Halo tuir link download zipped source code disponivel ba Unix/Linux.
-
-- Download no extract file.Edit module/setup file ne’ebe mak ita hakarak ba kostume opsaun balu.
-
-- Run ./configure script
-
-- Make
-
-- Make install
-
-  Insalasaun Python ne’e iha lokasaun standard /usr/local/bin no libraria sira iha /usr/local/lib/pythonXX iha ne’ebe XX iha versaun Python.
-
-**Instalasaun Windows**
-  Iha ne’e mak step atu instala Python ba iha Windows machine.
-
-  - Loke Web browser no ba iha https://www.python.org/downloads/
-
-  - Halo tuir link ba iha instalasaun Windows *python-XYZ.msi* dokumentus iha ne’ebe XYZ iha versaun ita presisa halo instalasaun.
-
-  - Atu usa instalasaun iha ne’e *python-XYZ.msi,* sistema Windows suporta Microsoft Installer 2.0. Rai dokumentus instalasaun ba ita nia local machine no run ida ne’e atu hetan nia resultadu se nia machine suporta MSI.
-
-  - Run dokumentus download. Ne’e lori instalasaun Python wizard, ne’ebe realiza fasil atu uza. Foin aseita iha defaul settings, hein to instalsaun hotu, no ita remata.
-
-    
-
-  **Instalasaun Macintosh**
-  Foin dadauk Macs mai ho instalasaun Python. Maibe ne’e dala ruma iha tinan balu data liu tiha. Hare http://www.python.org/download/mac/ iha instrusaun ne’e hetan versaun agora dok ho extra tools ba suporta desenvolve iha Mac. Iha folder Mac OS’s molok Mas OS X 10.3(realiza iha 2003), MacPython mak disponilvel.
-
-  Jack Jansen maintein ida ne’e no ita bele asesu hotu atu hatama dokumentos ba iha nia website - http://www.cwi.nl/~jack/macpython.html. Ita bele hetan deitalu instalasaun kompletu ba instalasaun Mac OS.
-
+1. **Instala Virtualenv:**
+    - Loke terminal (ka Command Prompt iha Windows)
+    - Ketik  `pip install virtualenv` hodi instala virtualenv
+   
+2. **Kria Virtual Environment:**
+    - Muda ba folder ne'ebé ita hakarak kria environment
+    - Ketik `virtualenv myenv` hodi kria virtual environment fó naran "myenv"
+   
+3.  **Ativa Virtual environment:**
+    - Iha Windows, ketik  ``myenv\Scripts\activate``
+    - Iha Linux/macOs, ketik ``source myenv/bin/activate``

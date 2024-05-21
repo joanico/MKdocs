@@ -2,17 +2,17 @@
 
 **Saida mak Variabel ?**
 
-Variabel mak fatin memoria rezerva ida hodi rai valor sira. Signifika katak bainhira ita kria variabel ida ita rezerva hela fatin mamu iha memoria, valor sira nebe ita rai bele ho tipu data interger ka karakteristika sira.
+Variavel mak fatin memória rezerva ida hodi rai valór sira. Signifika katak bainhira ita kria variavel ida ita rezerva hela fatin mamuk iha memória, valór sira ne'ebé ita rai bele ho tipu data interger ka karakterístika sira.
 
 ### Deklara variabel
 
-Atu deklara variabel iha python partikularmente ita indentifika `Naran` no `Valor`
+Atu deklara variavel iha python partikularmente ita identifika `Naran` no `Valor`
 
-`Naran` mak hodi identifika  variabel
+`Naran` mak hodi identifika  variavel
 
-`Valor` bele identifika depois operador (=)  
+`Valor` bele identifika depois operadór (=)  
 
-  Por exemple:
+  Por ezemplu:
 
   ```
   a = 1
@@ -20,108 +20,108 @@ Atu deklara variabel iha python partikularmente ita indentifika `Naran` no `Valo
 
 ![var](https://i.postimg.cc/KYvB4scS/Screen-Shot-2021-03-10-at-6-10-06-PM.png)
 
-Notas: a mak identifika ona naran husi variabel no valor mak 1 
+Notas: a mak identifika ona naran husi variavel no valor mak 1 
 
 ### Naran Variabel
 
-Python naran variabel bele refere ba kualker naran husi variabel bele hakerek ho letra maiskula ka minuskula no bele hakerek digital husi 0 to’o 9 no uza simbolu sira hanesan underscore(__)
+Python naran variavel bele refere ba kualkér naran husi variavel bele hakerek ho letra maiskula ka minuskula no bele hakerek dijitál husi 0 to’o 9 no uza símbolu sira hanesan underscore(__)
 
-  ```
-  >>> naran = "Mario"
-  >>> tinan = 30
-  >>> altura = 168
-  ```
+```
+>>> naran = "Mario"
+>>> tinan = 30
+>>> altura = 168
+```
 
-  Print variable naran :
+Print variavel naran :
 
-  ```
-  >>> print(naran)  
-  >>> print(tinan)  
-  >>> print(altura)  
-  ```
+```
+>>> print(naran)  
+>>> print(tinan)  
+>>> print(altura)  
+```
 
-  Fo sai rezultadu:
+Fo sai rezultadu:
 
-  ```
-  Mario
-  30
-  168
-  ```
+```
+Mario
+30
+168
+```
 
 
 
 ### Multipla Assignment
 
-Iha python bele kria variabel barak no refere ba valor ida deit ka ita bele kria valor ida bele assign ba multipla variabel ka variabel oin-oin.
+Iha python bele kria variavel barak no refere ba valor ida deit ka ita bele kria valor ida bele assign ba multipla variavel ka variavel oin-oin.
 
-  Exemplu:
+  Ezemplu:
 
-Assign valor ida ba multipla variabel ka bele kria multipla variabel fo valor ida edit.
+Assign valor ida ba multipla variavel ka bele kria multipla variavel fo valor ida edit.
 
-  ```
-  a = b = c = 10
-  
-  print(a)
-  print(b)
-  print(c)
-  ```
+```
+a = b = c = 10
 
-Assign multipla valor ba multipla variabel 
+print(a)
+print(b)
+print(c)
+```
 
-  ```
-  x, y, z = 10, 15, "hello"
-  
-  print (x)
-  print (y)
-  print (z)
-  ```
+Assign multipla valor ba multipla variavel 
 
-### Tipu Variabel
+```
+x, y, z = 10, 15, "hello"
 
-Tipu python variabel iha rua local variabel no global variabel.
+print (x)
+print (y)
+print (z)
+```
 
-**Local Variabel**
+### Tipu Variavel
 
-Local variabel mak defini iha funsaun nia laran no iha local scope.
+Tipu python variavel iha rua local variavel no global variavel.
 
-Exemplu:
+**Local Variavel**
 
-  ```
-  # Deklara funsaun  
-  def func():  
-      # defini lokal variabel 
-      a = 20  
-      print("Variabel a mak", a)  
+Local variavel mak defini iha funsaun nia laran no iha local scope.
+
+Ezemplu:
+
+```
+# Deklara funsaun  
+def func():  
+    # defini lokal variabel 
+    a = 20  
+    print("Variavel a mak", a)  
+  # bolu funsaun
+func() 
+```
+
+Fó sai rezultadu
+
+```
+Variavel a mak 20
+```
+
+Global Variavel bele uza jeral ka laos iha funsaun nia laran ka global scope no bele uza mos iha funsaun nia laran ka local scope maybe tenki uza global keyword. 
+
+Ezemplu:
+
+```
+a = 20 # Global variabel
+# Deklara funsaun  
+def func():  
+    print("global a mak", a)  
     # bolu funsaun
-  func() 
-  ```
+func()
+```
 
-  Fo sai rezultadu
+Fó sai rezultadu
 
-  ```
-  Variabel a mak 20
-  ```
-
-Global Variabel bele uza jeral ka laos iha funsaun nia laran ka global scope no bele uza mos iha funsaun nia laran ka local scope maybe tenki uza global keyword. 
-
-  Exemplu:
-
-  ```
-  a = 20 # Global variabel
-  # Deklara funsaun  
-  def func():  
-      print("global a mak", a)  
-      # bolu funsaun
-  func()
-  ```
-
-  Fo sai rezultadu
-
-  ```
+```
 global a mak 20
-  ```
+```
 
-Exemplu global variabel iha funsaun nia laran uza global keyword:
+Ezemplu global variavel iha funsaun nia laran uza global keyword:
 
 ```
 # Deklara funsaun  
@@ -134,20 +134,20 @@ def func():
 func()
 ```
 
-Fo sai rezultadu
+Fó sai rezultadu
 
 ```
 global a mak 20
 ```
 
-Exemplu konaba deklara global no local variabel iha funsaun nia laran:
+Ezemplu konaba deklara global no local variavel iha funsaun nia laran:
 
 ```
 # Deklara funsaun  
 def func():
     global a
     a = 20 
-    h = 2  # defini lokal variabel 
+    h = 2  # defini local variabel 
     print("global", a, "no local", h)  
   
 func() # bolu funsaun 

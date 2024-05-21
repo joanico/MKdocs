@@ -1,26 +1,23 @@
 site_name: Niko Docs
-# ida nee kria navbar ka mennu
+site_url: https://joanico.github.io/makdocs/
+# ida nee kria navbar ka menu
 nav:
-- Matadalan:
-    - 'Python Tutorial': 'python_tutorial.md'
-- Python Baziku:
-    - 'Python Introdusaun': 'python_overview.md'
-    - 'Python Kria Enviromentu': 'python_environment_setup'
-    - 'Python Sintase': 'execute_python_syntax.md'
-    - 'Python Variabel': 'python_variables.md'
-    - 'Python Tipu Data': 'python_data_type.md'
-    - 'Python Tuple': 'python_tuples.md'
-    - 'Python Mutable no Immutable': 'python_mutable_immutable.md'
-    - 'Python Set': 'python_set.md'
-    - 'Python Slice': 'python_list_slicing.md'
-- Python Avansadu:
-    - 'Python Tutorial Avansadu': 'python_advanced_tutorials.md'
-- Python Tutorial Seluk:
-     - 'Python Tutorial Seluk': 'python_other_tutorials.md'
-- Python Topiku:
-    - 'Python Notifikasaun': 'python_notifikasaun.md'
-- Konaba:
-    - 'Referensia': 'about.md'
+    - Python Baziku:
+        - 'Python Introdusaun': 'python_overview.md'
+        - 'Python Kria Enviromentu': 'python_environment_setup'
+        - 'Python Sintase': 'python_syntax.md'
+        - 'Python Tipu Data': 'python_data_type.md'
+        - 'Python Variabel': 'python_variables.md'
+        - 'Python Tuple': 'python_tuples.md'
+        - 'Python Mutable no Immutable': 'python_mutable_immutable.md'
+        - 'Python Set': 'python_set.md'
+        - 'Python Slice': 'python_list_slicing.md'
+    - Python Avansadu:
+        - 'Python Tutorial Avansadu': 'python_advanced_tutorials.md'
+    - Python Tutorial Seluk:
+        - 'Python Tutorial Seluk': 'python_other_tutorials.md'
+    - Konaba:
+        - 'Referensia': 'about.md'
 #Kria tema 
 theme:
     name: readthedocs #iha nebe ita bele troka readthedocs tema ba mkdocs
@@ -29,6 +26,11 @@ theme:
     hljs_languages:
         - yaml
         - rust
+
+plugins:
+  - search
+  - macros
+
 #Kria extensaun markdown        
 markdown_extensions:
     - smarty

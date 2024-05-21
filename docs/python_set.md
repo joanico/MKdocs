@@ -1,4 +1,4 @@
-# Python - Set
+## Python - Set
 
 Set mak tipu data mutabel ne'ebé halo kolesaun ba data husi item barak iha variavel ida de'it.
 
@@ -6,15 +6,11 @@ Set mós tipu data ida husi Python ne'ebé uza hodi rai kolesaun data hanesan si
 
 Kolesaun data set mak hanesan:
 
-- Set mutable bele muda objetu sira iha list ho dict
-
-- Set immutable la bele muda objetu ka aumenta iha set nia laran hanesan list ho dict
-
-- Set distinct valór sira ne'ebé dupla
-
-- Set la simu print ka buka elementu husi índise(unindexed)
-
-- Set la order objetu (unordered)
+  - Set mutable bele muda objetu sira iha list ho dict
+  - Set immutable la bele muda objetu ka aumenta iha set nia laran hanesan list ho dict
+  - Set distinct valór sira ne'ebé dupla
+  - Set la simu print ka buka elementu husi índise(unindexed)
+  - Set la order objetu (unordered)
 
 
 
@@ -100,7 +96,7 @@ Traceback (most recent call last):
 TypeError: unhashable type: 'list'
 
 unhashable type: 'list'
->>> set_val = {{5, 5}, 6, 8} # La bele aumenta set iha set seluk nia laran
+>>> set_val = {[5, 5], 6, 8} # La bele aumenta set iha set seluk nia laran
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 TypeError: unhashable type: 'set'
@@ -145,7 +141,7 @@ Funsaun set () ne'e mós uza hodi transforma objetu string, tuple, ka dictionary
 {1, 2}
 ```
 
-## Modify Set Elements
+### Modify Set Elements
 
 Uza métodu add (), remove () ka update () hodi modifika kolesaun set.
 
@@ -163,7 +159,7 @@ Uza métodu add (), remove () ka update () hodi modifika kolesaun set.
 {1, 3}
 ```
 
-## Set Operations
+### Set Operations
 
 Hanesan temi tiha ona iha leten, tipu dadus ne'ebé define iha Python implementasaun hanesan set ne'ebé define iha matemátika. Bele hala'o operasaun oioin **|, &, - no ^** . Operadór sira halo operasaun ho nia unidade, intervensaun, diferensa no diferensa simetrika (union, intersection, difference, and symmetric difference operations ). Operador sira ne'e ida-idak iha métodu korrespondénsia ne'ebé asosiadu ho klase ne'ebé harii ona.
 

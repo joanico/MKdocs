@@ -1,10 +1,10 @@
 ## Tipu Data
 
-Tipu data husi variabel nebe ita kria no fo nia valor bele identifika hanesan tuir mai ne'e bele integer, string ka float no boolean.
+Tipu data husi variavel ne'ebé ita kria no fó nia valór bele identifika hanesan tuir mai ne'e bele integer, string ka float no boolean.
 
 ### String
 
-String (str) mak tipu data ida nebe fo sai karakteristika iha simbolu ho marka quotation ka  dupla marka quotation.
+String (str) mak tipu data ida ne'ebé fó sai karakterístika iha símbolu ho marka quotation ka  dupla marka quotation.
 
 Single quotation
 
@@ -22,13 +22,13 @@ Double quotation
 <class 'str'>
 ```
 
- ### Integer
+### Integer
 
-Integer (int) mak tipu data ida nebe ho numeru decimal bele pozitivu no negativu husi 0 zero too 9, bele numeru octal no hexadecimal.
+Integer (int) mak tipu data ida ne'ebé ho númeru decimal bele pozitivu no negativu husi 0 zero to'o 9, bele númeru octal no hexadecimal.
 
-Iha octal inisial ho `0o` no hexadecimal sei hahu ho `0x`.
+Iha octal inisiál ho `0o` no hexadecimal sei hahú ho `0x`.
 
-Valor Positivu
+Valór Positivu
 
 ```
 >>> x = 10
@@ -36,7 +36,7 @@ Valor Positivu
 <class 'int'>
 ```
 
-Valor Negativu
+Valór Negativu
 
 ```
 >>> y = -10
@@ -46,7 +46,7 @@ Valor Negativu
 <class 'int'>
 ```
 
-Valor boot
+Valór boot
 
 ```
 >>> z = 100000000000000000000000
@@ -56,7 +56,7 @@ Valor boot
 <class 'int'>
 ```
 
-Valor Octal
+Valór Octal
 
 ```
 >>> octalInt = 0o32
@@ -66,7 +66,7 @@ Valor Octal
 <class 'int'>
 ```
 
-Valor Hexadecimal
+Valór Hexadecimal
 
 ```
 >>> hexInt = 0xEE
@@ -78,7 +78,7 @@ Valor Hexadecimal
 
 ### Float
 
-Float mak tipu data ida nebe reprezenta numeru ho pontu, nebe ita hakerek ho pontu decimal ka ho string.
+Float mak tipu data ida ne'ebé reprezenta númeru ho pontu, ne'ebé ita hakerek ho pontu decimal ka ho string.
 
 Reprezenta float ho integer
 
@@ -100,9 +100,9 @@ Reprezenta float ho string
 <class 'float'>
 ```
 
- ### Boolean
+### Boolean
 
-Boolean tipu data ida nebe ho valor rua deit mak True no False nebe existi.
+Boolean tipu data ida ne'ebé ho valór rua de'it mak `True` no `False` ne'ebé eziste.
 
 ```
 >>> a = True
@@ -114,7 +114,7 @@ Boolean tipu data ida nebe ho valor rua deit mak True no False nebe existi.
 <class 'bool'>
 ```
 
-Kompara entre valor rua 
+Kompara entre valór rua 
 
 ```
 x = 5
