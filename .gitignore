@@ -1,8 +1,0 @@
-site/
-# MacOS X
-.DS_Store
-# Pluma save files
-*.save
-*.save.*
-*.swp
-*.swo
