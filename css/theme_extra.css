@@ -195,3 +195,7 @@ td, th {
     flex: 1;
     text-align: center;
 }
+
+span.caption-text {
+    color: #0f59bbe8;
+}

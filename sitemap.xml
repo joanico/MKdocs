@@ -1,4 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url>
+     <loc>None</loc>
+     <lastmod>2021-02-28</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>None</loc>
+     <lastmod>2021-02-28</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>None</loc>
+     <lastmod>2021-02-28</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>None</loc>
+     <lastmod>2021-02-28</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>None</loc>
+     <lastmod>2021-02-28</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>None</loc>
+     <lastmod>2021-02-28</lastmod>
+     <changefreq>daily</changefreq>
+=======
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://joanico.github.io/makdocs/</loc>
@@ -74,5 +100,6 @@
          <loc>https://joanico.github.io/makdocs/python_variables/</loc>
          <lastmod>2024-05-21</lastmod>
          <changefreq>daily</changefreq>
+>>>>>>> gh-pages
     </url>
 </urlset>
