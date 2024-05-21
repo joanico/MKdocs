@@ -1,152 +1,135 @@
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  
-  
-  <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Python Variabel - Niko Docs</title>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
-
-  <link rel="stylesheet" href="../css/theme.css" />
-  <link rel="stylesheet" href="../css/theme_extra.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
-  <link href="../extra_css/extra.css" rel="stylesheet" />
-  
-  <script>
-    // Current page data
-    var mkdocs_page_name = "Python Variabel";
-    var mkdocs_page_input_path = "python_variables.md";
-    var mkdocs_page_url = null;
-  </script>
-  
-  <script src="../js/jquery-2.1.1.min.js" defer></script>
-  <script src="../js/modernizr-2.8.3.min.js" defer></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/rust.min.js"></script>
-  <script>hljs.initHighlightingOnLoad();</script> 
-  
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://joanico.github.io/makdocs/python_variables/" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Python Variabel - Niko Docs</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../extra_css/extra.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Python Variabel";
+        var mkdocs_page_input_path = "python_variables.md";
+        var mkdocs_page_url = "/makdocs/python_variables/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/yaml.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/rust.min.js"></script>
+      <script>hljs.highlightAll();</script> 
 </head>
 
 <body class="wy-body-for-nav" role="document">
 
   <div class="wy-grid-for-nav">
-
-    
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
     <div class="wy-side-scroll">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Niko Docs</a>
-        <div role="search">
+          <a href=".." class="icon icon-home"> Niko Docs
+        </a><div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
   </form>
 </div>
       </div>
 
-      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-                <p class="caption"><span class="caption-text">Python Baziku</span></p>
-                <ul class="current">
-                    <li class="toctree-l1"><a class="" href="../python_environment_setup">Python Hahu Kria Enviromentu</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../execute_python_syntax/">Python Sintase</a>
-                    </li>
-                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Python Variabel</a>
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption"><span class="caption-text">Python Baziku</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../python_overview/">Python Introdusaun</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../python_environment_setup">Python Kria Enviromentu</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../python_syntax/">Python Sintase</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../python_data_type/">Python Tipu Data</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Python Variabel</a>
     <ul class="current">
     <li class="toctree-l2"><a class="reference internal" href="#deklara-variabel">Deklara variabel</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#naran-variavel">Naran Variavel</a>
+    <li class="toctree-l2"><a class="reference internal" href="#naran-variabel">Naran Variabel</a>
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#multipla-assignment">Multipla Assignment</a>
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#tipu-variavel">Tipu Variavel</a>
     </li>
     </ul>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../python_data_type/">Python Tipu Data</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../python_list_slicing/">Python Slice</a>
-                    </li>
-                </ul>
-                <p class="caption"><span class="caption-text">Python Avansadu</span></p>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../python_advanced_tutorials/">Python Tutorial Avansadu</a>
-                    </li>
-                </ul>
-                <p class="caption"><span class="caption-text">Python Tutorial Seluk</span></p>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../python_other_tutorials/">Python Tutorial Seluk</a>
-                    </li>
-                </ul>
-                <p class="caption"><span class="caption-text">Python Topiku</span></p>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../python_notifikasaun/">Python Notifikasaun</a>
-                    </li>
-                </ul>
-                <p class="caption"><span class="caption-text">Konaba</span></p>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../about/">Referensia</a>
-                    </li>
-                </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../python_tuples/">Python Tuple</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../python_mutable_immutable/">Python Mutable no Immutable</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../python_set/">Python Set</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../python_list_slicing/">Python Slice</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Python Avansadu</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../python_advanced_tutorials/">Python Tutorial Avansadu</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Python Tutorial Seluk</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../python_other_tutorials/">Python Tutorial Seluk</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Konaba</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../about/">Referensia</a>
+                  </li>
+              </ul>
       </div>
     </div>
     </nav>
 
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
-        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Niko Docs</a>
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">Niko Docs</a>
+        
       </nav>
-
-      
       <div class="wy-nav-content">
-        <div class="rst-content">
-          <div role="navigation" aria-label="breadcrumbs navigation">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
-    <li><a href="..">Docs</a> &raquo;</li>
-    
-      
-        
-          <li>Python Baziku &raquo;</li>
-        
-      
-    
-    <li>Python Variabel</li>
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Python Baziku</li>
+      <li class="breadcrumb-item active">Python Variabel</li>
     <li class="wy-breadcrumbs-aside">
-      
     </li>
   </ul>
-  
   <hr/>
 </div>
-          <div role="main">
-            <div class="section">
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
               
                 <h2 id="python-variabel"><strong>Python - Variabel</strong><a class="headerlink" href="#python-variabel" title="Permanent link">&para;</a></h2>
 <p><strong>Saida mak Variabel ?</strong></p>
 <p>Variavel mak fatin memória rezerva ida hodi rai valór sira. Signifika katak bainhira ita kria variavel ida ita rezerva hela fatin mamuk iha memória, valór sira ne&rsquo;ebé ita rai bele ho tipu data interger ka karakterístika sira.</p>
 <h3 id="deklara-variabel">Deklara variabel<a class="headerlink" href="#deklara-variabel" title="Permanent link">&para;</a></h3>
-<p>Atu deklara variavel iha python partikularmente ita identifika Naran no Valor:</p>
-<p>Naran mak hodi identifika variavel.</p>
-<p>Valór bele identifika depois operadór <code>(=)</code>.</p>
+<p>Atu deklara variavel iha python partikularmente ita identifika <code>Naran</code> no <code>Valor</code></p>
+<p><code>Naran</code> mak hodi identifika  variavel</p>
+<p><code>Valor</code> bele identifika depois operadór (=)  </p>
 <p>Por ezemplu:</p>
 <p><code>a = 1</code></p>
 <p><img alt="var" src="https://i.postimg.cc/KYvB4scS/Screen-Shot-2021-03-10-at-6-10-06-PM.png" /></p>
-<p>Notas: <code>a</code> mak identifika ona naran husi variavel no valór mak <code>1</code>.</p>
-<h3 id="naran-variavel">Naran Variavel<a class="headerlink" href="#naran-variavel" title="Permanent link">&para;</a></h3>
-<p>Python naran variavel bele refere ba kualkér naran husi variavel bele hakerek ho letra mais-kula ka minus-kula no bele hakerek dijitál husi 0 to’o 9 no uza símbolu sira hanesan underscore(__)</p>
+<p>Notas: a mak identifika ona naran husi variavel no valor mak 1 </p>
+<h3 id="naran-variabel">Naran Variabel<a class="headerlink" href="#naran-variabel" title="Permanent link">&para;</a></h3>
+<p>Python naran variavel bele refere ba kualkér naran husi variavel bele hakerek ho letra maiskula ka minuskula no bele hakerek dijitál husi 0 to’o 9 no uza símbolu sira hanesan underscore(__)</p>
 <pre><code>&gt;&gt;&gt; naran = &quot;Mario&quot;
 &gt;&gt;&gt; tinan = 30
 &gt;&gt;&gt; altura = 168
 </code></pre>
-<p>Print variable naran :</p>
+<p>Print variavel naran :</p>
 <pre><code>&gt;&gt;&gt; print(naran)  
 &gt;&gt;&gt; print(tinan)  
 &gt;&gt;&gt; print(altura)  
@@ -157,16 +140,16 @@
 168
 </code></pre>
 <h3 id="multipla-assignment">Multipla Assignment<a class="headerlink" href="#multipla-assignment" title="Permanent link">&para;</a></h3>
-<p>Iha python bele kria variavel barak no refere ba valór ida de&rsquo;it ka ita bele kria valór ida bele assign ba multipla variavel ka variavel oin-oin.</p>
+<p>Iha python bele kria variavel barak no refere ba valor ida deit ka ita bele kria valor ida bele assign ba multipla variavel ka variavel oin-oin.</p>
 <p>Ezemplu:</p>
-<p>a. Assign valór ida ba multipla variavel ka bele kria multipla variavel fó valór ida edit.</p>
+<p>Assign valor ida ba multipla variavel ka bele kria multipla variavel fo valor ida edit.</p>
 <pre><code>a = b = c = 10
 
 print(a)
 print(b)
 print(c)
 </code></pre>
-<p>b. Assign multipla valor ba multipla variavel </p>
+<p>Assign multipla valor ba multipla variavel </p>
 <pre><code>x, y, z = 10, 15, &quot;hello&quot;
 
 print (x)
@@ -174,84 +157,73 @@ print (y)
 print (z)
 </code></pre>
 <h3 id="tipu-variavel">Tipu Variavel<a class="headerlink" href="#tipu-variavel" title="Permanent link">&para;</a></h3>
-<p>Tipu python variavel iha rua lokal variabel no global variavel.</p>
-<p><strong>Lokal Variavel</strong></p>
-<p>Lokál variavel mak define iha funsaun nia laran no iha local scope.</p>
+<p>Tipu python variavel iha rua local variavel no global variavel.</p>
+<p><strong>Local Variavel</strong></p>
+<p>Local variavel mak defini iha funsaun nia laran no iha local scope.</p>
 <p>Ezemplu:</p>
 <pre><code># Deklara funsaun  
-def funs():  
+def func():  
     # defini lokal variabel 
     a = 20  
-    print(&quot;Local variabel a mak&quot;, a)  
-# bolu funsaun
-funs() 
+    print(&quot;Variavel a mak&quot;, a)  
+  # bolu funsaun
+func() 
 </code></pre>
-<p>Fo sai rezultadu</p>
-<pre><code>Local variabel a mak 20
+<p>Fó sai rezultadu</p>
+<pre><code>Variavel a mak 20
 </code></pre>
-<p>Globál Variabel bele uza jerál ka la&rsquo;ós iha funsaun nia laran ka globál scope no bele uza mós iha funsaun nia laran ka local scope maibé tenki uza global keyword.</p>
+<p>Global Variavel bele uza jeral ka laos iha funsaun nia laran ka global scope no bele uza mos iha funsaun nia laran ka local scope maybe tenki uza global keyword. </p>
 <p>Ezemplu:</p>
 <pre><code>a = 20 # Global variabel
 # Deklara funsaun  
-def funs():  
-    print(&quot;global variabel a mak&quot;, a)  
-# bolu funsaun
-funs()
+def func():  
+    print(&quot;global a mak&quot;, a)  
+    # bolu funsaun
+func()
 </code></pre>
-<p>Fo sai rezultadu  </p>
-<pre><code>global variabel a mak 20
+<p>Fó sai rezultadu</p>
+<pre><code>global a mak 20
 </code></pre>
-<p>Ezemplu globál variavel iha funsaun nia laran uza global keyword:</p>
+<p>Ezemplu global variavel iha funsaun nia laran uza global keyword:</p>
 <pre><code># Deklara funsaun  
-def funs():
+def func():
     global a
     a = 20
     # defini lokal variabel 
     print(&quot;global a mak&quot;, a)  
 # bolu funsaun
-funs()
+func()
 </code></pre>
-<p>Fo sai rezultadu</p>
+<p>Fó sai rezultadu</p>
 <pre><code>global a mak 20
 </code></pre>
-<p>Ezemplu kona-ba deklara globál no lokál variavel iha funsaun nia laran:</p>
+<p>Ezemplu konaba deklara global no local variavel iha funsaun nia laran:</p>
 <pre><code># Deklara funsaun  
-def funs():
+def func():
     global a
     a = 20 
-    h = 2  # defini lokal variabel 
+    h = 2  # defini local variabel 
     print(&quot;global&quot;, a, &quot;no local&quot;, h)  
 
-funs() # bolu funsaun 
-</code></pre>
-<p>Fo sai rezultadu</p>
-<pre><code>global 20 no local 2
+func() # bolu funsaun 
 </code></pre>
               
             </div>
-          </div>
-          <footer>
-  
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-        <a href="../python_data_type/" class="btn btn-neutral float-right" title="Python Tipu Data">Next <span class="icon icon-circle-arrow-right"></span></a>
-      
-      
-        <a href="../execute_python_syntax/" class="btn btn-neutral" title="Python Sintase"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-      
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../python_data_type/" class="btn btn-neutral float-left" title="Python Tipu Data"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../python_tuples/" class="btn btn-neutral float-right" title="Python Tuple">Next <span class="icon icon-circle-arrow-right"></span></a>
     </div>
-  
 
   <hr/>
 
   <div role="contentinfo">
     <!-- Copyright etc -->
-    
   </div>
 
-  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
 </footer>
-      
+          
         </div>
       </div>
 
@@ -259,24 +231,26 @@ funs() # bolu funsaun
 
   </div>
 
-  <div class="rst-versions" role="note" aria-label="versions">
-    <span class="rst-current-version" data-toggle="rst-current-version">
-      
-      
-        <span><a href="../execute_python_syntax/" style="color: #fcfcfc;">&laquo; Previous</a></span>
-      
-      
-        <span style="margin-left: 15px"><a href="../python_data_type/" style="color: #fcfcfc">Next &raquo;</a></span>
-      
-    </span>
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../python_data_type/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../python_tuples/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
 </div>
-    <script>var base_url = '..';</script>
-    <script src="../js/theme.js" defer></script>
-      <script src="../search/main.js" defer></script>
-    <script defer>
-        window.onload = function () {
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
             SphinxRtdTheme.Navigation.enable(true);
-        };
+        });
     </script>
 
 </body>
