@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://joanico.github.io/makdocs/python_data_type/" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Python Tipu Data - Niko Docs</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../extra_css/extra.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Python Tipu Data";
+        var mkdocs_page_input_path = "python_data_type.md";
+        var mkdocs_page_url = "/makdocs/python_data_type/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/yaml.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/rust.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> Niko Docs
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption"><span class="caption-text">Python Baziku</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../python_overview/">Python Introdusaun</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../python_environment_setup">Python Kria Enviromentu</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../python_syntax/">Python Sintase</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Python Tipu Data</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#string">String</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#integer">Integer</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#float">Float</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#boolean">Boolean</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../python_variables/">Python Variabel</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../python_tuples/">Python Tuple</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../python_mutable_immutable/">Python Mutable no Immutable</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../python_set/">Python Set</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../python_list_slicing/">Python Slice</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Python Avansadu</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../python_advanced_tutorials/">Python Tutorial Avansadu</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Python Tutorial Seluk</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../python_other_tutorials/">Python Tutorial Seluk</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Konaba</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../about/">Referensia</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">Niko Docs</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Python Baziku</li>
+      <li class="breadcrumb-item active">Python Tipu Data</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h2 id="tipu-data">Tipu Data<a class="headerlink" href="#tipu-data" title="Permanent link">&para;</a></h2>
+<p>Tipu data husi variavel ne&rsquo;ebé ita kria no fó nia valór bele identifika hanesan tuir mai ne&rsquo;e bele integer, string ka float no boolean.</p>
+<h3 id="string">String<a class="headerlink" href="#string" title="Permanent link">&para;</a></h3>
+<p>String (str) mak tipu data ida ne&rsquo;ebé fó sai karakterístika iha símbolu ho marka quotation ka  dupla marka quotation.</p>
+<p>Single quotation</p>
+<pre><code>&gt;&gt;&gt; a = 'Jose'
+&gt;&gt;&gt; type(a)
+&lt;class 'str'&gt;
+</code></pre>
+<p>Double quotation</p>
+<pre><code>&gt;&gt;&gt; b = &quot;Maria&quot;
+&gt;&gt;&gt; type(b)
+&lt;class 'str'&gt;
+</code></pre>
+<h3 id="integer">Integer<a class="headerlink" href="#integer" title="Permanent link">&para;</a></h3>
+<p>Integer (int) mak tipu data ida ne&rsquo;ebé ho númeru decimal bele pozitivu no negativu husi 0 zero to&rsquo;o 9, bele númeru octal no hexadecimal.</p>
+<p>Iha octal inisiál ho <code>0o</code> no hexadecimal sei hahú ho <code>0x</code>.</p>
+<p>Valór Positivu</p>
+<pre><code>&gt;&gt;&gt; x = 10
+&gt;&gt;&gt; type(x)
+&lt;class 'int'&gt;
+</code></pre>
+<p>Valór Negativu</p>
+<pre><code>&gt;&gt;&gt; y = -10
+&gt;&gt;&gt; print(y)
+-10
+&gt;&gt;&gt; type(y)
+&lt;class 'int'&gt;
+</code></pre>
+<p>Valór boot</p>
+<pre><code>&gt;&gt;&gt; z = 100000000000000000000000
+&gt;&gt;&gt; print(z)
+100000000000000000000000
+&gt;&gt;&gt; type(z)
+&lt;class 'int'&gt;
+</code></pre>
+<p>Valór Octal</p>
+<pre><code>&gt;&gt;&gt; octalInt = 0o32
+&gt;&gt;&gt; print(octalInt)
+26
+&gt;&gt;&gt; type(octalInt)
+&lt;class 'int'&gt;
+</code></pre>
+<p>Valór Hexadecimal</p>
+<pre><code>&gt;&gt;&gt; hexInt = 0xEE
+&gt;&gt;&gt; print(hexInt)
+238
+&gt;&gt;&gt; type(hexInt)
+&lt;class 'int'&gt;
+</code></pre>
+<h3 id="float">Float<a class="headerlink" href="#float" title="Permanent link">&para;</a></h3>
+<p>Float mak tipu data ida ne&rsquo;ebé reprezenta númeru ho pontu, ne&rsquo;ebé ita hakerek ho pontu decimal ka ho string.</p>
+<p>Reprezenta float ho integer</p>
+<pre><code>&gt;&gt;&gt; x = float(10)
+&gt;&gt;&gt; print(x)
+10.0
+&gt;&gt;&gt; type(x)
+&lt;class 'float'&gt;
+</code></pre>
+<p>Reprezenta float ho string</p>
+<pre><code>&gt;&gt;&gt; y = float(&quot;10&quot;)
+&gt;&gt;&gt; print(y)
+10.0
+&gt;&gt;&gt; type(y)
+&lt;class 'float'&gt;
+</code></pre>
+<h3 id="boolean">Boolean<a class="headerlink" href="#boolean" title="Permanent link">&para;</a></h3>
+<p>Boolean tipu data ida ne&rsquo;ebé ho valór rua de&rsquo;it mak <code>True</code> no <code>False</code> ne&rsquo;ebé eziste.</p>
+<pre><code>&gt;&gt;&gt; a = True
+&gt;&gt;&gt; type(a)
+&lt;class 'bool'&gt;
+
+&gt;&gt;&gt; b = False
+&gt;&gt;&gt; type(b)
+&lt;class 'bool'&gt;
+</code></pre>
+<p>Kompara entre valór rua </p>
+<pre><code>x = 5
+y = 10
+print(bool(x==y))
+</code></pre>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../python_syntax/" class="btn btn-neutral float-left" title="Python Sintase"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../python_variables/" class="btn btn-neutral float-right" title="Python Variabel">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../python_syntax/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../python_variables/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
