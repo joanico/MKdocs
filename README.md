@@ -1,24 +1,24 @@
-# MKdocs
+## MKdocs
 
-Hahú MkDocs
+#### Hahú MkDocs
 
-Mkdocs mak jerador situs static ida nebe dezeña ona hodi dezenvole situs web  dokumentasaun hanesan python no sira seluk. Iha língua programasaun python, MkDocs mak projetu open source ka rekursu ida ne'e nakloke ho apoiu barak hosi komunidade. Rekursu nebe uza hodi hakerek dokumentu sira mak uza rekursu markdown no konfigura uza rekursu yaml atu hatene konaba oinsa uza markdown bele lee nia referensia iha nee Markdown no  rekursu yaml bele hare iha ne'e Yaml.
+Mkdocs mak jeradór sítiu static ida ne'ebé dezeña ona hodi dezenvolve sítiu web dokumentasaun hanesan python no sira seluk. Iha língua programasaun python, MkDocs mak projetu open source ka rekursu ida ne'e nakloke ho apoiu barak hosi komunidade. Rekursu ne'ebé uza hodi hakerek dokumentu sira mak uza rekursu markdown no konfigura uza rekursu yaml atu hatene kona-ba oinsá uza markdown bele lee nia referénsia iha ne'e Markdown no rekursu yaml bele hare iha ne'e Yaml.
 
-Iha karakterístika boot barak nebe inklui:
+Iha karakterístika boot barak ne'ebé inklui:
 
-- Bele host iha nebe deit
+- Bele host iha ne'ebé deit
 - Theme diak no disponibilidade hadia
 - Dokumentasaun ho Markdown
 
-Install Mkdocs
+#### Instala Mkdocs
 
-Install ho jerente pakote
+Instala no jere pakote
 
-Se karik uza ona pakote (hanesan  apt-get, dnf, homebrew, yum, chocolatey, no sira seluk) nee ita bele buka   install pakote refere konaba install "MkDocs" no bele hare nia versaun.
+Se karik uza ona pakote (hanesan  apt-get, dnf, homebrew, yum, chocolatey, no sira seluk) nee ita bele buka   instala pakote refere konaba instala "MkDocs" no bele hare nia versaun.
 
 Se karik ita nia jestora pakote la iha pakote "MkDocs", ita bele uza nafatin ita boot nia pakote hodi instala "Python" no "pip". Depois ita bele uza pip hodi instala MkDocs. MkDocs suporta Python versions 3.5, 3.6, 3.7, 3.8, no pypy3.
 
-Atu install mkdocs hanesan tuir mai no bele hare detallu husi instala MkDocs:
+Atu instala mkdocs hanesan tuir mai no bele hare detallu husi instala MkDocs:
 
     $ pip install mkdocs
 
@@ -27,7 +27,7 @@ Hafoin install ita bele hare verzaun Mkdocs nebe ita foin install.
     $ mkdocs --version
     mkdocs, version 1.1.2 from /home/nicko/.pyenv/versions/Devel/envs/mkdocs/lib/python3.8/site-packages/mkdocs (Python 3.8)
 
-Kria Projetu Foun
+#### Kria Projetu Foun
 
 Kria projetu foun iha MkDocs hanesan tuir mai nee.
 
@@ -44,7 +44,8 @@ Konfigura mkdocs.yml ba ita nia projetu mkdocs mak hanesan docs/index.md ida neb
 
 Ita bele edita file index.md no bele aumenta detallu konaba ita nia projetu no tuir mai ita bele hari ita nia dokumentasaun liu husi run mkdocs serve:
 
-Exekuta Projetu
+#### Hala'o projetu
+Loke terminal iha ubuntu ka macOS tuir mai ketik run `mkdocs serve`
 
     $ mkdocs serve
     INFO    -  Building documentation...
@@ -146,7 +147,7 @@ Exemplu troka style heading 2 husi markdown nia iha extra.css
         color: cornflowerblue;
     }
 
-Hari situs mkdocs
+#### Hari situs mkdocs
 
 Hari ita nia dokumentasaun sai hanesan situs. Mkdocs sei fo aumatikamente dokumentu sira sei forma ho HTML index.html file no pasta ka directory no fo file static sira hanesan css, font, img ba directory.
 
@@ -160,7 +161,7 @@ Sei hatudu rezultadu hanesan:
     404.html  css	fonts  index.html  mkdocs.yml  search.html  sitemap.xml
     about	  docs	img    js	   python      search		site
 
-Deploy situs Mkdocs
+#### Deploy situs Mkdocs
 
 MKdocs ita bele host Ita nia projetu bainhira ita nia dokumentasaun iha ona repository ida nebe públiku hanesan GitHub, Bitbucket ka GitLab, ita bele hahú uza Read Docs nian iha importasaun docs ita-nia ka deploy mkdocs
 
@@ -178,7 +179,7 @@ Exekusaun kodigu ida leten iha kualker branch nebe deit maibe detallu iha master
 
 Hafoin ita deploy sei kria link ida refere ba ita nia account github nia exemplu https://joanico.github.io/MKdocs/  tuir mai ita bele ona asesu ita nia dokumentasaun iha kualker fatin ne'e deit.
 
-Rekursu esterna
+#### Rekursu esterna
 
 - Iha neʼe iha rekursu esternál balu atu ajuda ita aprende tan kona-ba MkDocs.
 - MkDocs dokumentasaun 
