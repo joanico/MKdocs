@@ -50,3 +50,6 @@ extra_css:
 # Ida nee uza css wainhira atu deploy ba github    
 extra_css: [extra_css/extra.css]
 
+extra_javascript:
+    - extra_javascript/gtm.html
+
