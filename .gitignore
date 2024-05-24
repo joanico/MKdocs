@@ -1,4 +1,21 @@
-site/
+# Ignore build artifacts
+/site/
+
+# Ignore Python bytecode
+__pycache__/
+*.py[cod]
+
+# Ignore virtual environment directories
+venv/
+.env/
+
+# Ignore IDE and editor files
+.vscode/
+.idea/
+
+# Ignore logs and temporary files
+*.log
+*.tmp
 # MacOS X
 .DS_Store
 # Pluma save files
